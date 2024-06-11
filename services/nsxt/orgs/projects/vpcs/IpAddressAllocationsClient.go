@@ -36,8 +36,8 @@ type IpAddressAllocationsClient interface {
 
 	// Get detail information on VPC ip allocation by giving ID.
 	//
-	// @param orgIdParam (required)
-	// @param projectIdParam (required)
+	// @param orgIdParam The organization ID (required)
+	// @param projectIdParam The project ID (required)
 	// @param vpcIdParam (required)
 	// @param ipAddressAllocationIdParam (required)
 	// @return com.vmware.nsx_policy.model.VpcIpAddressAllocation
@@ -51,8 +51,8 @@ type IpAddressAllocationsClient interface {
 
 	// List all the ip allocations for a VPC.
 	//
-	// @param orgIdParam (required)
-	// @param projectIdParam (required)
+	// @param orgIdParam The organization ID (required)
+	// @param projectIdParam The project ID (required)
 	// @param vpcIdParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
 	// @param includeMarkForDeleteObjectsParam Include objects that are marked for deletion in results (optional, default to false)
@@ -71,8 +71,8 @@ type IpAddressAllocationsClient interface {
 
 	// Create a VPC ip allocation if it does not exist
 	//
-	// @param orgIdParam (required)
-	// @param projectIdParam (required)
+	// @param orgIdParam The organization ID (required)
+	// @param projectIdParam The project ID (required)
 	// @param vpcIdParam (required)
 	// @param ipAddressAllocationIdParam (required)
 	// @param vpcIpAddressAllocationParam (required)
@@ -86,8 +86,8 @@ type IpAddressAllocationsClient interface {
 
 	// Create a VPC ip allocation if it does not exist
 	//
-	// @param orgIdParam (required)
-	// @param projectIdParam (required)
+	// @param orgIdParam The organization ID (required)
+	// @param projectIdParam The project ID (required)
 	// @param vpcIdParam (required)
 	// @param ipAddressAllocationIdParam (required)
 	// @param vpcIpAddressAllocationParam (required)

@@ -1,6 +1,6 @@
 module gitlab.eng.vmware.com/golangsdk/vsphere-automation-sdk-go
 
-go 1.12
+go 1.17
 
 require (
 	gitlab.eng.vmware.com/golangsdk/vsphere-automation-sdk-go/services v0.1.0

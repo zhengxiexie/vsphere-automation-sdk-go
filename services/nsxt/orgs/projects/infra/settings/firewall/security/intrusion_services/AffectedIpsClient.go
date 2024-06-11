@@ -20,10 +20,10 @@ const _ = vapiCore_.SupportedByRuntimeVersion2
 
 type AffectedIpsClient interface {
 
-	// Get the list of IP addresses affected pertaining to a specific signature for intrusion events detected on gateway.
+	// Get the list of gateways where an intrusion event matching a signature was detected.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param policyIdsEventDataRequestParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
 	// @param includedFieldsParam Comma separated list of fields that should be included in query result (optional)

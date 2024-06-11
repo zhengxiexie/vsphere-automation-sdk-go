@@ -1,75 +1,48 @@
-image: vmcswaggers-docker-local.artifactory.eng.vmware.com/go_automation_sdk:0.6.0
+image: vmcswaggers-docker-local.artifactory.eng.vmware.com/infra_sdk_go:0.4-SNAPSHOT
+
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE != "web"'
+      when: never
+    - if: '$CI_PIPELINE_SOURCE == "web"'
 
 before_script:
-  - git config --global user.name "sdk team"
+  - git config --global user.name "dx-sdk-team automation"
   - git config --global user.email "dx-sdk-team@vmware.com"
 
 stages:
-  - test
   - prepare
   - build
-  - pre-publish
   - publish
-
-test:
-  stage: test
-  tags: [k8-runner]
-  script:
-    - bash scripts/test.sh $VMC_STAGE_REFRESH_TOKEN $VMC_ORG_ID
 
 prepare:
   stage: prepare
-  tags: [k8-runner]
+  tags: [new-docker-runner]
   script:
     - echo $CI_COMMIT_TAG
     - echo $CI_COMMIT_REF_NAME
     - bash scripts/prepare.sh
-  only:
-    - web
   artifacts:
     untracked: true
-    expire_in: 1 day
+    expire_in: 1 days
     when: on_success
     paths:
-      - "${CI_PROJECT_DIR}/${DESTINATION_REPO}"
+      - "${CI_PROJECT_DIR}/${DEST_DIR}"
 
-  
 build:
   stage: build
-  tags: [k8-runner]
+  tags: [docker-runner]
   script:
     - bash scripts/build.sh
-  only:
-    - web
   artifacts:
     untracked: true
-    expire_in: 1 day
+    expire_in: 1 days
     when: on_success
     paths:
-      - "${CI_PROJECT_DIR}/${DESTINATION_REPO}"
-
-  
-pre-publish:
-  stage: pre-publish
-  tags: [k8-runner]
-  script:
-    - bash scripts/pre_publish.sh
-    # - echo "SKIP"
-  only:
-    - web
-  artifacts:
-    untracked: true
-    expire_in: 1 day
-    when: on_success
-    paths:
-      - "${CI_PROJECT_DIR}/${DESTINATION_REPO}"
-
+      - "${CI_PROJECT_DIR}/${DEST_DIR}"
 
 publish:
   stage: publish
-  tags: [k8-runner]
+  tags: [new-docker-runner]
   script:
     - bash scripts/publish.sh
-  only:
-    - web
-  when: manual
