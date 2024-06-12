@@ -3,8 +3,8 @@ module github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt
 go 1.17
 
 require (
-	github.com/zhengxiexie/vsphere-automation-sdk-go/lib main
-	github.com/zhengxiexie/vsphere-automation-sdk-go/runtime main
+	github.com/zhengxiexie/vsphere-automation-sdk-go/lib v0.7.1
+	github.com/zhengxiexie/vsphere-automation-sdk-go/runtime v0.7.1
 )
 
 require (
