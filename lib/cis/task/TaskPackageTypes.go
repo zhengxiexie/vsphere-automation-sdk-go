@@ -11,10 +11,10 @@
 package task
 
 import (
-	vapiStd_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	vapiStd_ "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 	"reflect"
 	"time"
 )

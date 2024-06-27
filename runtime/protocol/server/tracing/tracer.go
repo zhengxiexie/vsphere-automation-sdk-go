@@ -7,7 +7,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
 )
 
 // Defines interfaces needed for trace integration of transports.

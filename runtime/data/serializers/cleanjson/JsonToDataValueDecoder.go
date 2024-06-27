@@ -6,9 +6,9 @@ package cleanjson
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data/serializers"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data/serializers"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/l10n"
 )
 
 type JsonToDataValueDecoder struct {

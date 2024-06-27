@@ -11,10 +11,10 @@
 package sddcs
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/services/vmc/autoscaler/model"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/vmware/vsphere-automation-sdk-go/services/vmc/autoscaler/model"
 	"reflect"
 )
 

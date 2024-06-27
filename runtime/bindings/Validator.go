@@ -4,9 +4,9 @@
 package bindings
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 )
 
 type Validator interface {
@@ -135,7 +135,7 @@ func NewHasFieldsOfValidator(hasFieldsOfTypes []ReferenceType) HasFieldsOfValida
 	return HasFieldsOfValidator{hasFieldsOfTypes: hasFieldsOfTypes}
 }
 
-//Validates whether a StructValue satisfies the HasFieldsOf constraint
+// Validates whether a StructValue satisfies the HasFieldsOf constraint
 func (hv HasFieldsOfValidator) Validate(structValue *data.StructValue) []error {
 	if structValue == nil {
 		return nil
@@ -178,7 +178,7 @@ func NewIsOneOfValidator(fieldName string, allowedValues []string) IsOneOfValida
 	return IsOneOfValidator{fieldName: fieldName, allowedValues: allowedValuesSet}
 }
 
-//Validates whether a StructValue satisfies the HasFieldsOf constraint
+// Validates whether a StructValue satisfies the HasFieldsOf constraint
 func (is IsOneOfValidator) Validate(structValue *data.StructValue) []error {
 	// @IsOneOf is only allowed on String fields, and not on Optional<String>
 	// ones (this is enforced by the idl toolkit. So it is safe to assume the

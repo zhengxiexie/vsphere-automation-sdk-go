@@ -11,10 +11,10 @@
 package draas
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/services/vmc/draas/model"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/vmware/vsphere-automation-sdk-go/services/vmc/draas/model"
 	"reflect"
 )
 

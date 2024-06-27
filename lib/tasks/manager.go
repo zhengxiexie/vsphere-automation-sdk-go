@@ -9,16 +9,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/lib/cis"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/lib/cis/task"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std"
-	vapiErrors "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/common"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
+	"github.com/vmware/vsphere-automation-sdk-go/lib/cis"
+	"github.com/vmware/vsphere-automation-sdk-go/lib/cis/task"
+	"github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std"
+	vapiErrors "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/common"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
 )
 
 // CreateSpec provides information on tasks specifics when it is initialized by CreateTask method

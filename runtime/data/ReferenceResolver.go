@@ -4,7 +4,7 @@
 package data
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/l10n"
 )
 
 /**

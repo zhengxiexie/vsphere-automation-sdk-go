@@ -5,9 +5,9 @@ package data
 
 import (
 	"errors"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 	"strconv"
 )
 

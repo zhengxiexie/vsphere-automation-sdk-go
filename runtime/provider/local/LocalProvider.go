@@ -6,13 +6,13 @@ package local
 import (
 	"errors"
 	"fmt"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/provider/introspection"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/provider/introspection"
 	"strings"
 )
 

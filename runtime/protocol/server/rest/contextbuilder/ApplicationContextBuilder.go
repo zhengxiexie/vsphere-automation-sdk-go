@@ -4,7 +4,7 @@
 package contextbuilder
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
 	"net/http"
 )
 

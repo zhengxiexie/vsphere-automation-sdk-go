@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/security"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/security"
 )
 
 type UserPasswordSecurityContextBuilderImpl struct {

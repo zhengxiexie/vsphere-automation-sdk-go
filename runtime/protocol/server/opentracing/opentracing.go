@@ -10,8 +10,8 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
 )
 
 const (

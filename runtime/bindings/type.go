@@ -4,8 +4,8 @@
 package bindings
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/lib"
 	"reflect"
 )
 
@@ -43,7 +43,7 @@ func NewIntegerType() IntegerType {
 	return IntegerType{}
 }
 
-//implements BindingType
+// implements BindingType
 type StringType struct{}
 
 func NewStringType() StringType {

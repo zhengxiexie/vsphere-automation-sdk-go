@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0fcd89-1b04-421c-883e-3feb4eeffd7a" name="Changes" comment="">
+    <list default="true" id="af0fcd89-1b04-421c-883e-3feb4eeffd7a" name="Changes" comment="Replace zhengxiexie with vmware in path">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/lib/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/lib/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/nsxt-mp/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/services/nsxt-mp/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/nsxt-mp/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/services/nsxt-mp/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/nsxt/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/services/nsxt/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/nsxt/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/services/nsxt/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +31,12 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/zhengxiexie/vsphere-automation-sdk-go.git&quot;,
-    &quot;accountId&quot;: &quot;51c8b179-5a16-4b74-a95c-3060d647b548&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/zhengxiexie/vsphere-automation-sdk-go.git",
+    "accountId": "51c8b179-5a16-4b74-a95c-3060d647b548"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -48,18 +50,19 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/xizheng/Code/vsphere-automation-sdk-go&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/xizheng/Code/vsphere-automation-sdk-go.github"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -68,6 +71,10 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Replace zhengxiexie with vmware in path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace zhengxiexie with vmware in path" />
+  </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
   </component>

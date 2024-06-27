@@ -5,13 +5,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	auth "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/examples/authentication/server/authentication_handlers"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/examples/authentication/server/bindings/src/generated/vmodl/examples/greeter"
-	greeterImpl "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/examples/authentication/server/impl"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/rpc/msg"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/provider/local"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/security"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	auth "github.com/vmware/vsphere-automation-sdk-go/runtime/examples/authentication/server/authentication_handlers"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/examples/authentication/server/bindings/src/generated/vmodl/examples/greeter"
+	greeterImpl "github.com/vmware/vsphere-automation-sdk-go/runtime/examples/authentication/server/impl"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/server/rpc/msg"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/provider/local"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/security"
 	"net/http"
 )
 

@@ -12,13 +12,13 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/common"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/common"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/server"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
 )
 
 const ENABLE_VAPI_PROVIDER_WIRE_LOGGING = "ENABLE_VAPI_PROVIDER_WIRE_LOGGING"

@@ -4,7 +4,7 @@
 package http
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/http/internal"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/http/internal"
 	"io"
 )
 

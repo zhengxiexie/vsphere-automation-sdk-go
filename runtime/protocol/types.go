@@ -4,7 +4,7 @@
 package protocol
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
 )
 
 // RestClientOptions provides contract for managing rest connector options

@@ -7,14 +7,14 @@ import (
 	"context"
 	"fmt"
 	"github.com/buger/jsonparser"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/examples/stream/client/bindings/src/generated/vmodl/examples/greeter"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/http"
+	"github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std"
+	"github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/examples/stream/client/bindings/src/generated/vmodl/examples/greeter"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/client"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/http"
 	"time"
 )
 
@@ -28,7 +28,6 @@ func NewCustomFrameDeserializer() *CustomFrameDeserializer {
 var _ http.ClientFrameDeserializer = &CustomFrameDeserializer{}
 
 // DeserializeFrames interrupts frames deserialization and prints raw frame response
-//
 func (c *CustomFrameDeserializer) DeserializeFrames(ctx context.Context, frames chan []byte) (chan core.MonoResult, error) {
 	result := make(chan core.MonoResult)
 

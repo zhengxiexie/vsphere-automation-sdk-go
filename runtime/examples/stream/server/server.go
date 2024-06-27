@@ -5,10 +5,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/examples/stream/server/bindings/src/generated/vmodl/examples/greeter"
-	greeterImpl "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/examples/stream/server/impl"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/rpc/msg"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/provider/local"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/examples/stream/server/bindings/src/generated/vmodl/examples/greeter"
+	greeterImpl "github.com/vmware/vsphere-automation-sdk-go/runtime/examples/stream/server/impl"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/server/rpc/msg"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/provider/local"
 	"net/http"
 )
 

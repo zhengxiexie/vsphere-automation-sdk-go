@@ -11,10 +11,10 @@
 package cis
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/vmware/vsphere-automation-sdk-go/runtime/log"
+	vapiProtocol_ "github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
 	"reflect"
 	"time"
 )

@@ -4,8 +4,8 @@
 package client
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client/internal"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/client/internal"
 	"net/http"
 )
 

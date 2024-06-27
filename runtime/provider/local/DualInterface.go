@@ -4,9 +4,9 @@
 package local
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/rest"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/rest/contextbuilder"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/server/rest"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/server/rest/contextbuilder"
 )
 
 type (
