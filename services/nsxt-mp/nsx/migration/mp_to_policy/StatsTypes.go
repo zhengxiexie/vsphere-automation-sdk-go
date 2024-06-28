@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “location“ of method Stats#get.
+// Possible value for ``location`` of method Stats#get.
 const Stats_GET_LOCATION_CURRENT = "CURRENT"
 
-// Possible value for “location“ of method Stats#get.
+// Possible value for ``location`` of method Stats#get.
 const Stats_GET_LOCATION_ARCHIVED = "ARCHIVED"
 
 func statsGetInputType() vapiBindings_.StructType {

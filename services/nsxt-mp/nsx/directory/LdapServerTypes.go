@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method LdapServer#create.
+// Possible value for ``action`` of method LdapServer#create.
 const LdapServer_CREATE_ACTION_CONNECTIVITY = "CONNECTIVITY"
 
 func ldapServerCreateInputType() vapiBindings_.StructType {

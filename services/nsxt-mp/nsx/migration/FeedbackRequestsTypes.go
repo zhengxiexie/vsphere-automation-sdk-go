@@ -18,19 +18,19 @@ import (
 	"reflect"
 )
 
-// Possible value for “networkLayer“ of method FeedbackRequests#list.
+// Possible value for ``networkLayer`` of method FeedbackRequests#list.
 const FeedbackRequests_LIST_NETWORK_LAYER_L2 = "L2"
 
-// Possible value for “networkLayer“ of method FeedbackRequests#list.
+// Possible value for ``networkLayer`` of method FeedbackRequests#list.
 const FeedbackRequests_LIST_NETWORK_LAYER_L3_L7 = "L3_L7"
 
-// Possible value for “state“ of method FeedbackRequests#list.
+// Possible value for ``state`` of method FeedbackRequests#list.
 const FeedbackRequests_LIST_STATE_ALL = "ALL"
 
-// Possible value for “state“ of method FeedbackRequests#list.
+// Possible value for ``state`` of method FeedbackRequests#list.
 const FeedbackRequests_LIST_STATE_RESOLVED = "RESOLVED"
 
-// Possible value for “state“ of method FeedbackRequests#list.
+// Possible value for ``state`` of method FeedbackRequests#list.
 const FeedbackRequests_LIST_STATE_UNRESOLVED = "UNRESOLVED"
 
 func feedbackRequestsListInputType() vapiBindings_.StructType {

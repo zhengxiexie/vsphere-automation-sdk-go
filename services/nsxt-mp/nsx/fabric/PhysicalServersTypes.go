@@ -18,22 +18,22 @@ import (
 	"reflect"
 )
 
-// Possible value for “osType“ of method PhysicalServers#list.
+// Possible value for ``osType`` of method PhysicalServers#list.
 const PhysicalServers_LIST_OS_TYPE_RHELSERVER = "RHELSERVER"
 
-// Possible value for “osType“ of method PhysicalServers#list.
+// Possible value for ``osType`` of method PhysicalServers#list.
 const PhysicalServers_LIST_OS_TYPE_UBUNTUSERVER = "UBUNTUSERVER"
 
-// Possible value for “osType“ of method PhysicalServers#list.
+// Possible value for ``osType`` of method PhysicalServers#list.
 const PhysicalServers_LIST_OS_TYPE_CENTOSSERVER = "CENTOSSERVER"
 
-// Possible value for “osType“ of method PhysicalServers#list.
+// Possible value for ``osType`` of method PhysicalServers#list.
 const PhysicalServers_LIST_OS_TYPE_SLESSERVER = "SLESSERVER"
 
-// Possible value for “osType“ of method PhysicalServers#list.
+// Possible value for ``osType`` of method PhysicalServers#list.
 const PhysicalServers_LIST_OS_TYPE_WINDOWSSERVER = "WINDOWSSERVER"
 
-// Possible value for “osType“ of method PhysicalServers#list.
+// Possible value for ``osType`` of method PhysicalServers#list.
 const PhysicalServers_LIST_OS_TYPE_OELSERVER = "OELSERVER"
 
 func physicalServersGetInputType() vapiBindings_.StructType {

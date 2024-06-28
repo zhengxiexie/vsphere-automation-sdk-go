@@ -17,7 +17,7 @@ import (
 	"reflect"
 )
 
-// The “ComponentInfo“ is an aggregated class for CLI commands and namespaces information.
+// The ``ComponentInfo`` is an aggregated class for CLI commands and namespaces information.
 type ComponentInfo struct {
 	// Information for all CLI namespaces of a component
 	Namespaces []NamespaceInfo

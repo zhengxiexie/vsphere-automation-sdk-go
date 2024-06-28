@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method State#get.
+// Possible value for ``source`` of method State#get.
 const State_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method State#get.
+// Possible value for ``source`` of method State#get.
 const State_GET_SOURCE_CACHED = "cached"
 
 func stateGetInputType() vapiBindings_.StructType {

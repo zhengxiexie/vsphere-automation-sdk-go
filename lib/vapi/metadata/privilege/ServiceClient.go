@@ -17,9 +17,9 @@ import (
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The “Service“ interface provides methods to retrieve privilege information of a service element.
+// The ``Service`` interface provides methods to retrieve privilege information of a service element.
 //
-//	A service element is said to contain privilege information if one of the operation elements contained in this service element has privilege information.
+//  A service element is said to contain privilege information if one of the operation elements contained in this service element has privilege information.
 type ServiceClient interface {
 
 	// Returns the identifiers for the service elements that have privilege information.

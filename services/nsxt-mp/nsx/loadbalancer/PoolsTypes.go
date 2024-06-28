@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method Pools#create0.
+// Possible value for ``action`` of method Pools#create0.
 const Pools_CREATE_0_ACTION_ADD_MEMBERS = "ADD_MEMBERS"
 
-// Possible value for “action“ of method Pools#create0.
+// Possible value for ``action`` of method Pools#create0.
 const Pools_CREATE_0_ACTION_REMOVE_MEMBERS = "REMOVE_MEMBERS"
 
-// Possible value for “action“ of method Pools#create0.
+// Possible value for ``action`` of method Pools#create0.
 const Pools_CREATE_0_ACTION_UPDATE_MEMBERS = "UPDATE_MEMBERS"
 
 func poolsCreateInputType() vapiBindings_.StructType {

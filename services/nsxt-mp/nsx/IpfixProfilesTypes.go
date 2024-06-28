@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “appliedToEntityType“ of method IpfixProfiles#list.
+// Possible value for ``appliedToEntityType`` of method IpfixProfiles#list.
 const IpfixProfiles_LIST_APPLIED_TO_ENTITY_TYPE_LOGICALPORT = "LogicalPort"
 
-// Possible value for “appliedToEntityType“ of method IpfixProfiles#list.
+// Possible value for ``appliedToEntityType`` of method IpfixProfiles#list.
 const IpfixProfiles_LIST_APPLIED_TO_ENTITY_TYPE_LOGICALSWITCH = "LogicalSwitch"
 
-// Possible value for “appliedToEntityType“ of method IpfixProfiles#list.
+// Possible value for ``appliedToEntityType`` of method IpfixProfiles#list.
 const IpfixProfiles_LIST_APPLIED_TO_ENTITY_TYPE_NSGROUP = "NSGroup"
 
 func ipfixProfilesCreateInputType() vapiBindings_.StructType {

@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “selectionStatus“ of method AggregateInfo#list.
+// Possible value for ``selectionStatus`` of method AggregateInfo#list.
 const AggregateInfo_LIST_SELECTION_STATUS_SELECTED = "SELECTED"
 
-// Possible value for “selectionStatus“ of method AggregateInfo#list.
+// Possible value for ``selectionStatus`` of method AggregateInfo#list.
 const AggregateInfo_LIST_SELECTION_STATUS_DESELECTED = "DESELECTED"
 
-// Possible value for “selectionStatus“ of method AggregateInfo#list.
+// Possible value for ``selectionStatus`` of method AggregateInfo#list.
 const AggregateInfo_LIST_SELECTION_STATUS_ALL = "ALL"
 
 func aggregateInfoListInputType() vapiBindings_.StructType {

@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method Statistics#get.
+// Possible value for ``source`` of method Statistics#get.
 const Statistics_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method Statistics#get.
+// Possible value for ``source`` of method Statistics#get.
 const Statistics_GET_SOURCE_CACHED = "cached"
 
 func statisticsGetInputType() vapiBindings_.StructType {

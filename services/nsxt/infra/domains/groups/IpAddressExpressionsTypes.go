@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method IpAddressExpressions#create.
+// Possible value for ``action`` of method IpAddressExpressions#create.
 const IpAddressExpressions_CREATE_ACTION_ADD = "add"
 
-// Possible value for “action“ of method IpAddressExpressions#create.
+// Possible value for ``action`` of method IpAddressExpressions#create.
 const IpAddressExpressions_CREATE_ACTION_REMOVE = "remove"
 
 func ipAddressExpressionsCreateInputType() vapiBindings_.StructType {

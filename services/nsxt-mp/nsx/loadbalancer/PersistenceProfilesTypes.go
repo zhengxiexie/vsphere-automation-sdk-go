@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “type“ of method PersistenceProfiles#list.
+// Possible value for ``type`` of method PersistenceProfiles#list.
 const PersistenceProfiles_LIST_TYPE_LBCOOKIEPERSISTENCEPROFILE = "LbCookiePersistenceProfile"
 
-// Possible value for “type“ of method PersistenceProfiles#list.
+// Possible value for ``type`` of method PersistenceProfiles#list.
 const PersistenceProfiles_LIST_TYPE_LBSOURCEIPPERSISTENCEPROFILE = "LbSourceIpPersistenceProfile"
 
-// Possible value for “type“ of method PersistenceProfiles#list.
+// Possible value for ``type`` of method PersistenceProfiles#list.
 const PersistenceProfiles_LIST_TYPE_LBGENERICPERSISTENCEPROFILE = "LbGenericPersistenceProfile"
 
 func persistenceProfilesCreateInputType() vapiBindings_.StructType {

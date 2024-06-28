@@ -18,25 +18,25 @@ import (
 	"reflect"
 )
 
-// Possible value for “preferredNormalizationType“ of method Normalizations#list.
+// Possible value for ``preferredNormalizationType`` of method Normalizations#list.
 const Normalizations_LIST_PREFERRED_NORMALIZATION_TYPE_NSGROUP = "NSGroup"
 
-// Possible value for “preferredNormalizationType“ of method Normalizations#list.
+// Possible value for ``preferredNormalizationType`` of method Normalizations#list.
 const Normalizations_LIST_PREFERRED_NORMALIZATION_TYPE_IPSET = "IPSet"
 
-// Possible value for “preferredNormalizationType“ of method Normalizations#list.
+// Possible value for ``preferredNormalizationType`` of method Normalizations#list.
 const Normalizations_LIST_PREFERRED_NORMALIZATION_TYPE_MACSET = "MACSet"
 
-// Possible value for “preferredNormalizationType“ of method Normalizations#list.
+// Possible value for ``preferredNormalizationType`` of method Normalizations#list.
 const Normalizations_LIST_PREFERRED_NORMALIZATION_TYPE_LOGICALSWITCH = "LogicalSwitch"
 
-// Possible value for “preferredNormalizationType“ of method Normalizations#list.
+// Possible value for ``preferredNormalizationType`` of method Normalizations#list.
 const Normalizations_LIST_PREFERRED_NORMALIZATION_TYPE_LOGICALPORT = "LogicalPort"
 
-// Possible value for “preferredNormalizationType“ of method Normalizations#list.
+// Possible value for ``preferredNormalizationType`` of method Normalizations#list.
 const Normalizations_LIST_PREFERRED_NORMALIZATION_TYPE_DIRECTORYGROUP = "DirectoryGroup"
 
-// Possible value for “resourceType“ of method Normalizations#list.
+// Possible value for ``resourceType`` of method Normalizations#list.
 const Normalizations_LIST_RESOURCE_TYPE_NSGROUP = "NSGroup"
 
 func normalizationsListInputType() vapiBindings_.StructType {

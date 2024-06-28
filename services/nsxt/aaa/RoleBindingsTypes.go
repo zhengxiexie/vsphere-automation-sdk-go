@@ -18,88 +18,88 @@ import (
 	"reflect"
 )
 
-// Possible value for “identitySourceType“ of method RoleBindings#delete.
+// Possible value for ``identitySourceType`` of method RoleBindings#delete.
 const RoleBindings_DELETE_IDENTITY_SOURCE_TYPE_VIDM = "VIDM"
 
-// Possible value for “identitySourceType“ of method RoleBindings#delete.
+// Possible value for ``identitySourceType`` of method RoleBindings#delete.
 const RoleBindings_DELETE_IDENTITY_SOURCE_TYPE_LDAP = "LDAP"
 
-// Possible value for “identitySourceType“ of method RoleBindings#delete.
+// Possible value for ``identitySourceType`` of method RoleBindings#delete.
 const RoleBindings_DELETE_IDENTITY_SOURCE_TYPE_OIDC = "OIDC"
 
-// Possible value for “type“ of method RoleBindings#delete.
+// Possible value for ``type`` of method RoleBindings#delete.
 const RoleBindings_DELETE_TYPE_REMOTE_USER = "remote_user"
 
-// Possible value for “type“ of method RoleBindings#delete.
+// Possible value for ``type`` of method RoleBindings#delete.
 const RoleBindings_DELETE_TYPE_REMOTE_GROUP = "remote_group"
 
-// Possible value for “type“ of method RoleBindings#delete.
+// Possible value for ``type`` of method RoleBindings#delete.
 const RoleBindings_DELETE_TYPE_LOCAL_USER = "local_user"
 
-// Possible value for “type“ of method RoleBindings#delete.
+// Possible value for ``type`` of method RoleBindings#delete.
 const RoleBindings_DELETE_TYPE_PRINCIPAL_IDENTITY = "principal_identity"
 
-// Possible value for “identitySourceType“ of method RoleBindings#deletestalebindings.
+// Possible value for ``identitySourceType`` of method RoleBindings#deletestalebindings.
 const RoleBindings_DELETESTALEBINDINGS_IDENTITY_SOURCE_TYPE_VIDM = "VIDM"
 
-// Possible value for “identitySourceType“ of method RoleBindings#deletestalebindings.
+// Possible value for ``identitySourceType`` of method RoleBindings#deletestalebindings.
 const RoleBindings_DELETESTALEBINDINGS_IDENTITY_SOURCE_TYPE_LDAP = "LDAP"
 
-// Possible value for “identitySourceType“ of method RoleBindings#deletestalebindings.
+// Possible value for ``identitySourceType`` of method RoleBindings#deletestalebindings.
 const RoleBindings_DELETESTALEBINDINGS_IDENTITY_SOURCE_TYPE_OIDC = "OIDC"
 
-// Possible value for “type“ of method RoleBindings#deletestalebindings.
+// Possible value for ``type`` of method RoleBindings#deletestalebindings.
 const RoleBindings_DELETESTALEBINDINGS_TYPE_REMOTE_USER = "remote_user"
 
-// Possible value for “type“ of method RoleBindings#deletestalebindings.
+// Possible value for ``type`` of method RoleBindings#deletestalebindings.
 const RoleBindings_DELETESTALEBINDINGS_TYPE_REMOTE_GROUP = "remote_group"
 
-// Possible value for “type“ of method RoleBindings#deletestalebindings.
+// Possible value for ``type`` of method RoleBindings#deletestalebindings.
 const RoleBindings_DELETESTALEBINDINGS_TYPE_LOCAL_USER = "local_user"
 
-// Possible value for “type“ of method RoleBindings#deletestalebindings.
+// Possible value for ``type`` of method RoleBindings#deletestalebindings.
 const RoleBindings_DELETESTALEBINDINGS_TYPE_PRINCIPAL_IDENTITY = "principal_identity"
 
-// Possible value for “identitySourceType“ of method RoleBindings#get.
+// Possible value for ``identitySourceType`` of method RoleBindings#get.
 const RoleBindings_GET_IDENTITY_SOURCE_TYPE_VIDM = "VIDM"
 
-// Possible value for “identitySourceType“ of method RoleBindings#get.
+// Possible value for ``identitySourceType`` of method RoleBindings#get.
 const RoleBindings_GET_IDENTITY_SOURCE_TYPE_LDAP = "LDAP"
 
-// Possible value for “identitySourceType“ of method RoleBindings#get.
+// Possible value for ``identitySourceType`` of method RoleBindings#get.
 const RoleBindings_GET_IDENTITY_SOURCE_TYPE_OIDC = "OIDC"
 
-// Possible value for “type“ of method RoleBindings#get.
+// Possible value for ``type`` of method RoleBindings#get.
 const RoleBindings_GET_TYPE_REMOTE_USER = "remote_user"
 
-// Possible value for “type“ of method RoleBindings#get.
+// Possible value for ``type`` of method RoleBindings#get.
 const RoleBindings_GET_TYPE_REMOTE_GROUP = "remote_group"
 
-// Possible value for “type“ of method RoleBindings#get.
+// Possible value for ``type`` of method RoleBindings#get.
 const RoleBindings_GET_TYPE_LOCAL_USER = "local_user"
 
-// Possible value for “type“ of method RoleBindings#get.
+// Possible value for ``type`` of method RoleBindings#get.
 const RoleBindings_GET_TYPE_PRINCIPAL_IDENTITY = "principal_identity"
 
-// Possible value for “identitySourceType“ of method RoleBindings#list.
+// Possible value for ``identitySourceType`` of method RoleBindings#list.
 const RoleBindings_LIST_IDENTITY_SOURCE_TYPE_VIDM = "VIDM"
 
-// Possible value for “identitySourceType“ of method RoleBindings#list.
+// Possible value for ``identitySourceType`` of method RoleBindings#list.
 const RoleBindings_LIST_IDENTITY_SOURCE_TYPE_LDAP = "LDAP"
 
-// Possible value for “identitySourceType“ of method RoleBindings#list.
+// Possible value for ``identitySourceType`` of method RoleBindings#list.
 const RoleBindings_LIST_IDENTITY_SOURCE_TYPE_OIDC = "OIDC"
 
-// Possible value for “type“ of method RoleBindings#list.
+// Possible value for ``type`` of method RoleBindings#list.
 const RoleBindings_LIST_TYPE_REMOTE_USER = "remote_user"
 
-// Possible value for “type“ of method RoleBindings#list.
+// Possible value for ``type`` of method RoleBindings#list.
 const RoleBindings_LIST_TYPE_REMOTE_GROUP = "remote_group"
 
-// Possible value for “type“ of method RoleBindings#list.
+// Possible value for ``type`` of method RoleBindings#list.
 const RoleBindings_LIST_TYPE_LOCAL_USER = "local_user"
 
-// Possible value for “type“ of method RoleBindings#list.
+// Possible value for ``type`` of method RoleBindings#list.
 const RoleBindings_LIST_TYPE_PRINCIPAL_IDENTITY = "principal_identity"
 
 func roleBindingsCreateInputType() vapiBindings_.StructType {

@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “restoreComponent“ of method Status#get.
+// Possible value for ``restoreComponent`` of method Status#get.
 const Status_GET_RESTORE_COMPONENT_LOCAL_MANAGER = "LOCAL_MANAGER"
 
-// Possible value for “restoreComponent“ of method Status#get.
+// Possible value for ``restoreComponent`` of method Status#get.
 const Status_GET_RESTORE_COMPONENT_GLOBAL_MANAGER = "GLOBAL_MANAGER"
 
 func statusGetInputType() vapiBindings_.StructType {

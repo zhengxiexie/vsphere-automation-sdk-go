@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method Statistics#create.
+// Possible value for ``action`` of method Statistics#create.
 const Statistics_CREATE_ACTION_RESET = "reset"
 
-// Possible value for “source“ of method Statistics#get.
+// Possible value for ``source`` of method Statistics#get.
 const Statistics_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method Statistics#get.
+// Possible value for ``source`` of method Statistics#get.
 const Statistics_GET_SOURCE_CACHED = "cached"
 
 func statisticsCreateInputType() vapiBindings_.StructType {

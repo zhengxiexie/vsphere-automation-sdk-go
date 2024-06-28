@@ -18,37 +18,37 @@ import (
 	"reflect"
 )
 
-// Possible value for “deploymentType“ of method HostSwitchProfiles#list.
+// Possible value for ``deploymentType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_DEPLOYMENT_TYPE_VIRTUAL_MACHINE = "VIRTUAL_MACHINE"
 
-// Possible value for “deploymentType“ of method HostSwitchProfiles#list.
+// Possible value for ``deploymentType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_DEPLOYMENT_TYPE_PHYSICAL_MACHINE = "PHYSICAL_MACHINE"
 
-// Possible value for “deploymentType“ of method HostSwitchProfiles#list.
+// Possible value for ``deploymentType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_DEPLOYMENT_TYPE_UNKNOWN = "UNKNOWN"
 
-// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
+// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_UPLINKHOSTSWITCHPROFILE = "UplinkHostSwitchProfile"
 
-// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
+// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_LLDPHOSTSWITCHPROFILE = "LldpHostSwitchProfile"
 
-// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
+// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_NIOCPROFILE = "NiocProfile"
 
-// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
+// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_EXTRACONFIGHOSTSWITCHPROFILE = "ExtraConfigHostSwitchProfile"
 
-// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
+// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_VTEPHAHOSTSWITCHPROFILE = "VtepHAHostSwitchProfile"
 
-// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
+// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_HIGHPERFORMANCEHOSTSWITCHPROFILE = "HighPerformanceHostSwitchProfile"
 
-// Possible value for “nodeType“ of method HostSwitchProfiles#list.
+// Possible value for ``nodeType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_NODE_TYPE_EDGENODE = "EdgeNode"
 
-// Possible value for “nodeType“ of method HostSwitchProfiles#list.
+// Possible value for ``nodeType`` of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_NODE_TYPE_PUBLICCLOUDGATEWAYNODE = "PublicCloudGatewayNode"
 
 func hostSwitchProfilesCreateInputType() vapiBindings_.StructType {

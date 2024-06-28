@@ -18,19 +18,19 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method TransportNodeStatusReportJson#getall.
+// Possible value for ``source`` of method TransportNodeStatusReportJson#getall.
 const TransportNodeStatusReportJson_GETALL_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method TransportNodeStatusReportJson#getall.
+// Possible value for ``source`` of method TransportNodeStatusReportJson#getall.
 const TransportNodeStatusReportJson_GETALL_SOURCE_CACHED = "cached"
 
-// Possible value for “status“ of method TransportNodeStatusReportJson#getall.
+// Possible value for ``status`` of method TransportNodeStatusReportJson#getall.
 const TransportNodeStatusReportJson_GETALL_STATUS_UP = "UP"
 
-// Possible value for “status“ of method TransportNodeStatusReportJson#getall.
+// Possible value for ``status`` of method TransportNodeStatusReportJson#getall.
 const TransportNodeStatusReportJson_GETALL_STATUS_DOWN = "DOWN"
 
-// Possible value for “status“ of method TransportNodeStatusReportJson#getall.
+// Possible value for ``status`` of method TransportNodeStatusReportJson#getall.
 const TransportNodeStatusReportJson_GETALL_STATUS_DEGRADED = "DEGRADED"
 
 func transportNodeStatusReportJsonGetallInputType() vapiBindings_.StructType {

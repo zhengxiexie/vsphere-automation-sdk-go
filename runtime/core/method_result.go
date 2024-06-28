@@ -73,7 +73,7 @@ func createMonoStream(output data.DataValue, error *data.ErrorValue) chan MonoRe
 	return responseStream
 }
 
-// Deprecated: use NewErrorResult or NewDataResult
+//Deprecated: use NewErrorResult or NewDataResult
 func NewMethodResult(output data.DataValue, error *data.ErrorValue) MethodResult {
 	if output != nil && error != nil {
 		panic("Can not set both output and error in MethodResult")

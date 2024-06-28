@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method IpSets#create0.
+// Possible value for ``action`` of method IpSets#create0.
 const IpSets_CREATE_0_ACTION_ADD_IP = "add_ip"
 
-// Possible value for “action“ of method IpSets#create0.
+// Possible value for ``action`` of method IpSets#create0.
 const IpSets_CREATE_0_ACTION_REMOVE_IP = "remove_ip"
 
 func ipSetsCreateInputType() vapiBindings_.StructType {

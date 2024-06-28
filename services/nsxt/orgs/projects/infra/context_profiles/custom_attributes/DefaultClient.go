@@ -20,7 +20,7 @@ const _ = vapiCore_.SupportedByRuntimeVersion2
 
 type DefaultClient interface {
 
-	// This API adds/removes custom attribute values from list for a given attribute key.
+	// This API adds/removes custom attribute values from list for a given attribute key. The values in the request will be added or removed from the existing list.
 	//
 	// @param orgIdParam (required)
 	// @param projectIdParam (required)
@@ -34,7 +34,7 @@ type DefaultClient interface {
 	// @throws NotFound  Not Found
 	Create(orgIdParam string, projectIdParam string, policyCustomAttributesParam nsx_policyModel.PolicyCustomAttributes, actionParam string) error
 
-	// This API updates custom attribute value list for given key.
+	// This API lists all the custom attribute values defined in the system for the attribute_key mentioned as part of the url.
 	//
 	// @param orgIdParam (required)
 	// @param projectIdParam (required)
@@ -55,7 +55,7 @@ type DefaultClient interface {
 	// @throws NotFound  Not Found
 	List(orgIdParam string, projectIdParam string, attributeKeyParam *string, attributeSourceParam *string, cursorParam *string, includeMarkForDeleteObjectsParam *bool, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.PolicyContextProfileListResult, error)
 
-	// This API updates custom attribute value list for given key.
+	// This API updates custom attribute value list for given key in the request. This replaces the existing list with the list provided in the request
 	//
 	// @param orgIdParam (required)
 	// @param projectIdParam (required)

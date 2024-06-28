@@ -18,28 +18,28 @@ import (
 	"reflect"
 )
 
-// Possible value for “newStatus“ of method Alarms#setstatus.
+// Possible value for ``newStatus`` of method Alarms#setstatus.
 const Alarms_SETSTATUS_NEW_STATUS_OPEN = "OPEN"
 
-// Possible value for “newStatus“ of method Alarms#setstatus.
+// Possible value for ``newStatus`` of method Alarms#setstatus.
 const Alarms_SETSTATUS_NEW_STATUS_ACKNOWLEDGED = "ACKNOWLEDGED"
 
-// Possible value for “newStatus“ of method Alarms#setstatus.
+// Possible value for ``newStatus`` of method Alarms#setstatus.
 const Alarms_SETSTATUS_NEW_STATUS_SUPPRESSED = "SUPPRESSED"
 
-// Possible value for “newStatus“ of method Alarms#setstatus.
+// Possible value for ``newStatus`` of method Alarms#setstatus.
 const Alarms_SETSTATUS_NEW_STATUS_RESOLVED = "RESOLVED"
 
-// Possible value for “newStatus“ of method Alarms#setstatus0.
+// Possible value for ``newStatus`` of method Alarms#setstatus0.
 const Alarms_SETSTATUS_0_NEW_STATUS_OPEN = "OPEN"
 
-// Possible value for “newStatus“ of method Alarms#setstatus0.
+// Possible value for ``newStatus`` of method Alarms#setstatus0.
 const Alarms_SETSTATUS_0_NEW_STATUS_ACKNOWLEDGED = "ACKNOWLEDGED"
 
-// Possible value for “newStatus“ of method Alarms#setstatus0.
+// Possible value for ``newStatus`` of method Alarms#setstatus0.
 const Alarms_SETSTATUS_0_NEW_STATUS_SUPPRESSED = "SUPPRESSED"
 
-// Possible value for “newStatus“ of method Alarms#setstatus0.
+// Possible value for ``newStatus`` of method Alarms#setstatus0.
 const Alarms_SETSTATUS_0_NEW_STATUS_RESOLVED = "RESOLVED"
 
 func alarmsGetInputType() vapiBindings_.StructType {

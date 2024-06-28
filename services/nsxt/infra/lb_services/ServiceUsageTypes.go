@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method ServiceUsage#get.
+// Possible value for ``source`` of method ServiceUsage#get.
 const ServiceUsage_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method ServiceUsage#get.
+// Possible value for ``source`` of method ServiceUsage#get.
 const ServiceUsage_GET_SOURCE_CACHED = "cached"
 
 func serviceUsageGetInputType() vapiBindings_.StructType {

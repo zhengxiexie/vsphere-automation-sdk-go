@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “hasParent“ of method DiscoveredNodes#list.
+// Possible value for ``hasParent`` of method DiscoveredNodes#list.
 const DiscoveredNodes_LIST_HAS_PARENT_TRUE = "true"
 
-// Possible value for “hasParent“ of method DiscoveredNodes#list.
+// Possible value for ``hasParent`` of method DiscoveredNodes#list.
 const DiscoveredNodes_LIST_HAS_PARENT_FALSE = "false"
 
 func discoveredNodesCreatetransportnodeInputType() vapiBindings_.StructType {

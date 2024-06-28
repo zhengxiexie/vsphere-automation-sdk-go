@@ -18,16 +18,16 @@ import (
 	"reflect"
 )
 
-// Possible value for “frameType“ of method Overview#list.
+// Possible value for ``frameType`` of method Overview#list.
 const Overview_LIST_FRAME_TYPE_GLOBAL_MANAGER = "GLOBAL_MANAGER"
 
-// Possible value for “frameType“ of method Overview#list.
+// Possible value for ``frameType`` of method Overview#list.
 const Overview_LIST_FRAME_TYPE_LOCAL_MANAGER = "LOCAL_MANAGER"
 
-// Possible value for “frameType“ of method Overview#list.
+// Possible value for ``frameType`` of method Overview#list.
 const Overview_LIST_FRAME_TYPE_LOCAL_LOCAL_MANAGER = "LOCAL_LOCAL_MANAGER"
 
-// Possible value for “frameType“ of method Overview#list.
+// Possible value for ``frameType`` of method Overview#list.
 const Overview_LIST_FRAME_TYPE_NSX_INTELLIGENCE = "NSX_INTELLIGENCE"
 
 func overviewListInputType() vapiBindings_.StructType {

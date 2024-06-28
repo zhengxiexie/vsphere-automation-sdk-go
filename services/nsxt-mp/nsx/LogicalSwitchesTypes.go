@@ -18,31 +18,31 @@ import (
 	"reflect"
 )
 
-// Possible value for “switchType“ of method LogicalSwitches#list.
+// Possible value for ``switchType`` of method LogicalSwitches#list.
 const LogicalSwitches_LIST_SWITCH_TYPE_DEFAULT = "DEFAULT"
 
-// Possible value for “switchType“ of method LogicalSwitches#list.
+// Possible value for ``switchType`` of method LogicalSwitches#list.
 const LogicalSwitches_LIST_SWITCH_TYPE_SERVICE_PLANE = "SERVICE_PLANE"
 
-// Possible value for “switchType“ of method LogicalSwitches#list.
+// Possible value for ``switchType`` of method LogicalSwitches#list.
 const LogicalSwitches_LIST_SWITCH_TYPE_DHCP_RELAY = "DHCP_RELAY"
 
-// Possible value for “switchType“ of method LogicalSwitches#list.
+// Possible value for ``switchType`` of method LogicalSwitches#list.
 const LogicalSwitches_LIST_SWITCH_TYPE_GLOBAL = "GLOBAL"
 
-// Possible value for “switchType“ of method LogicalSwitches#list.
+// Possible value for ``switchType`` of method LogicalSwitches#list.
 const LogicalSwitches_LIST_SWITCH_TYPE_INTER_ROUTER = "INTER_ROUTER"
 
-// Possible value for “switchType“ of method LogicalSwitches#list.
+// Possible value for ``switchType`` of method LogicalSwitches#list.
 const LogicalSwitches_LIST_SWITCH_TYPE_EVPN = "EVPN"
 
-// Possible value for “switchType“ of method LogicalSwitches#list.
+// Possible value for ``switchType`` of method LogicalSwitches#list.
 const LogicalSwitches_LIST_SWITCH_TYPE_DVPG = "DVPG"
 
-// Possible value for “transportType“ of method LogicalSwitches#list.
+// Possible value for ``transportType`` of method LogicalSwitches#list.
 const LogicalSwitches_LIST_TRANSPORT_TYPE_OVERLAY = "OVERLAY"
 
-// Possible value for “transportType“ of method LogicalSwitches#list.
+// Possible value for ``transportType`` of method LogicalSwitches#list.
 const LogicalSwitches_LIST_TRANSPORT_TYPE_VLAN = "VLAN"
 
 func logicalSwitchesCreateInputType() vapiBindings_.StructType {

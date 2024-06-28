@@ -18,16 +18,16 @@ import (
 	"reflect"
 )
 
-// Possible value for “status“ of method ContainerClusterNcpstatus#list.
+// Possible value for ``status`` of method ContainerClusterNcpstatus#list.
 const ContainerClusterNcpstatus_LIST_STATUS_UNKNOWN = "UNKNOWN"
 
-// Possible value for “status“ of method ContainerClusterNcpstatus#list.
+// Possible value for ``status`` of method ContainerClusterNcpstatus#list.
 const ContainerClusterNcpstatus_LIST_STATUS_HEALTHY = "HEALTHY"
 
-// Possible value for “status“ of method ContainerClusterNcpstatus#list.
+// Possible value for ``status`` of method ContainerClusterNcpstatus#list.
 const ContainerClusterNcpstatus_LIST_STATUS_DOWN = "DOWN"
 
-// Possible value for “status“ of method ContainerClusterNcpstatus#list.
+// Possible value for ``status`` of method ContainerClusterNcpstatus#list.
 const ContainerClusterNcpstatus_LIST_STATUS_DEGRADED = "DEGRADED"
 
 func containerClusterNcpstatusCreateInputType() vapiBindings_.StructType {

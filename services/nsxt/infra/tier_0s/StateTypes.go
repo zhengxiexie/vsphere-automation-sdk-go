@@ -18,22 +18,22 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method State#get.
+// Possible value for ``source`` of method State#get.
 const State_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method State#get.
+// Possible value for ``source`` of method State#get.
 const State_GET_SOURCE_CACHED = "cached"
 
-// Possible value for “type“ of method State#get.
+// Possible value for ``type`` of method State#get.
 const State_GET_TYPE_GATEWAY_STATE = "GATEWAY_STATE"
 
-// Possible value for “type“ of method State#get.
+// Possible value for ``type`` of method State#get.
 const State_GET_TYPE_GATEWAY_STATUS = "GATEWAY_STATUS"
 
-// Possible value for “type“ of method State#get.
+// Possible value for ``type`` of method State#get.
 const State_GET_TYPE_IPV6_STATUS = "IPV6_STATUS"
 
-// Possible value for “type“ of method State#get.
+// Possible value for ``type`` of method State#get.
 const State_GET_TYPE_RD_PER_EDGE_MAPPING = "RD_PER_EDGE_MAPPING"
 
 func stateGetInputType() vapiBindings_.StructType {

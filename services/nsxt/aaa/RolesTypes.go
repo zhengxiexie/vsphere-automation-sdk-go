@@ -18,16 +18,16 @@ import (
 	"reflect"
 )
 
-// Possible value for “scope“ of method Roles#list.
+// Possible value for ``scope`` of method Roles#list.
 const Roles_LIST_SCOPE_ROOT = "ROOT"
 
-// Possible value for “scope“ of method Roles#list.
+// Possible value for ``scope`` of method Roles#list.
 const Roles_LIST_SCOPE_ORG = "ORG"
 
-// Possible value for “scope“ of method Roles#list.
+// Possible value for ``scope`` of method Roles#list.
 const Roles_LIST_SCOPE_PROJECT = "PROJECT"
 
-// Possible value for “scope“ of method Roles#list.
+// Possible value for ``scope`` of method Roles#list.
 const Roles_LIST_SCOPE_VPC = "VPC"
 
 func rolesCloneInputType() vapiBindings_.StructType {

@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “attributeSource“ of method Attributes#list.
+// Possible value for ``attributeSource`` of method Attributes#list.
 const Attributes_LIST_ATTRIBUTE_SOURCE_ALL = "ALL"
 
-// Possible value for “attributeSource“ of method Attributes#list.
+// Possible value for ``attributeSource`` of method Attributes#list.
 const Attributes_LIST_ATTRIBUTE_SOURCE_CUSTOM = "CUSTOM"
 
-// Possible value for “attributeSource“ of method Attributes#list.
+// Possible value for ``attributeSource`` of method Attributes#list.
 const Attributes_LIST_ATTRIBUTE_SOURCE_SYSTEM = "SYSTEM"
 
 func attributesListInputType() vapiBindings_.StructType {

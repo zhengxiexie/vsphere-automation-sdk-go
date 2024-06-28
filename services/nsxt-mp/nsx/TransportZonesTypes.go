@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “transportType“ of method TransportZones#list.
+// Possible value for ``transportType`` of method TransportZones#list.
 const TransportZones_LIST_TRANSPORT_TYPE_OVERLAY = "OVERLAY"
 
-// Possible value for “transportType“ of method TransportZones#list.
+// Possible value for ``transportType`` of method TransportZones#list.
 const TransportZones_LIST_TRANSPORT_TYPE_VLAN = "VLAN"
 
 func transportZonesCreateInputType() vapiBindings_.StructType {

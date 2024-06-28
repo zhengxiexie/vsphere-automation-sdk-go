@@ -17,7 +17,7 @@ import (
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The “Namespace“ interface provides methods to get information about command line interface (CLI) namespaces.
+// The ``Namespace`` interface provides methods to get information about command line interface (CLI) namespaces.
 type NamespaceClient interface {
 
 	// Returns the identifiers of all namespaces registered with the infrastructure.

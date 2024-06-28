@@ -18,16 +18,16 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method Tags#list.
+// Possible value for ``source`` of method Tags#list.
 const Tags_LIST_SOURCE_AMAZON = "Amazon"
 
-// Possible value for “source“ of method Tags#list.
+// Possible value for ``source`` of method Tags#list.
 const Tags_LIST_SOURCE_AZURE = "Azure"
 
-// Possible value for “source“ of method Tags#list.
+// Possible value for ``source`` of method Tags#list.
 const Tags_LIST_SOURCE_NSX = "NSX"
 
-// Possible value for “source“ of method Tags#list.
+// Possible value for ``source`` of method Tags#list.
 const Tags_LIST_SOURCE_ANY = "ANY"
 
 func tagsListInputType() vapiBindings_.StructType {

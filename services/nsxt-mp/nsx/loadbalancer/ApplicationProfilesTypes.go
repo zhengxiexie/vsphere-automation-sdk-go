@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “type“ of method ApplicationProfiles#list.
+// Possible value for ``type`` of method ApplicationProfiles#list.
 const ApplicationProfiles_LIST_TYPE_LBHTTPPROFILE = "LbHttpProfile"
 
-// Possible value for “type“ of method ApplicationProfiles#list.
+// Possible value for ``type`` of method ApplicationProfiles#list.
 const ApplicationProfiles_LIST_TYPE_LBFASTTCPPROFILE = "LbFastTcpProfile"
 
-// Possible value for “type“ of method ApplicationProfiles#list.
+// Possible value for ``type`` of method ApplicationProfiles#list.
 const ApplicationProfiles_LIST_TYPE_LBFASTUDPPROFILE = "LbFastUdpProfile"
 
 func applicationProfilesCreateInputType() vapiBindings_.StructType {

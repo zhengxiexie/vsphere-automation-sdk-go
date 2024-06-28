@@ -18,22 +18,22 @@ import (
 	"reflect"
 )
 
-// Possible value for “resourceType“ of method EffectiveProfiles#list.
+// Possible value for ``resourceType`` of method EffectiveProfiles#list.
 const EffectiveProfiles_LIST_RESOURCE_TYPE_NSGROUP = "NSGroup"
 
-// Possible value for “resourceType“ of method EffectiveProfiles#list.
+// Possible value for ``resourceType`` of method EffectiveProfiles#list.
 const EffectiveProfiles_LIST_RESOURCE_TYPE_LOGICALPORT = "LogicalPort"
 
-// Possible value for “resourceType“ of method EffectiveProfiles#list.
+// Possible value for ``resourceType`` of method EffectiveProfiles#list.
 const EffectiveProfiles_LIST_RESOURCE_TYPE_VIRTUALMACHINE = "VirtualMachine"
 
-// Possible value for “resourceType“ of method EffectiveProfiles#list.
+// Possible value for ``resourceType`` of method EffectiveProfiles#list.
 const EffectiveProfiles_LIST_RESOURCE_TYPE_TRANSPORTNODE = "TransportNode"
 
-// Possible value for “resourceType“ of method EffectiveProfiles#list.
+// Possible value for ``resourceType`` of method EffectiveProfiles#list.
 const EffectiveProfiles_LIST_RESOURCE_TYPE_LOGICALROUTER = "LogicalRouter"
 
-// Possible value for “resourceType“ of method EffectiveProfiles#list.
+// Possible value for ``resourceType`` of method EffectiveProfiles#list.
 const EffectiveProfiles_LIST_RESOURCE_TYPE_LOGICALSWITCH = "LogicalSwitch"
 
 func effectiveProfilesListInputType() vapiBindings_.StructType {

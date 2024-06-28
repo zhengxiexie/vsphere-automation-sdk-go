@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method ArpTable#list.
+// Possible value for ``source`` of method ArpTable#list.
 const ArpTable_LIST_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method ArpTable#list.
+// Possible value for ``source`` of method ArpTable#list.
 const ArpTable_LIST_SOURCE_CACHED = "cached"
 
 func arpTableListInputType() vapiBindings_.StructType {

@@ -17,10 +17,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “category“ of method Stats#reset.
+// Possible value for ``category`` of method Stats#reset.
 const Stats_RESET_CATEGORY_IDPSDFW = "IDPSDFW"
 
-// Possible value for “category“ of method Stats#reset.
+// Possible value for ``category`` of method Stats#reset.
 const Stats_RESET_CATEGORY_IDPSEDGE = "IDPSEDGE"
 
 func statsResetInputType() vapiBindings_.StructType {

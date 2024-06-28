@@ -18,19 +18,19 @@ import (
 	"reflect"
 )
 
-// Possible value for “bgpNeighborType“ of method Status#get.
+// Possible value for ``bgpNeighborType`` of method Status#get.
 const Status_GET_BGP_NEIGHBOR_TYPE_INTER_SR = "INTER_SR"
 
-// Possible value for “bgpNeighborType“ of method Status#get.
+// Possible value for ``bgpNeighborType`` of method Status#get.
 const Status_GET_BGP_NEIGHBOR_TYPE_USER = "USER"
 
-// Possible value for “source“ of method Status#get.
+// Possible value for ``source`` of method Status#get.
 const Status_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method Status#get.
+// Possible value for ``source`` of method Status#get.
 const Status_GET_SOURCE_CACHED = "cached"
 
-// Possible value for “statsType“ of method Status#get.
+// Possible value for ``statsType`` of method Status#get.
 const Status_GET_STATS_TYPE_STATS = "DATAPATH_STATS"
 
 func statusGetInputType() vapiBindings_.StructType {

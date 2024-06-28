@@ -18,25 +18,25 @@ import (
 	"reflect"
 )
 
-// Possible value for “attachmentType“ of method LogicalPorts#list.
+// Possible value for ``attachmentType`` of method LogicalPorts#list.
 const LogicalPorts_LIST_ATTACHMENT_TYPE_VIF = "VIF"
 
-// Possible value for “attachmentType“ of method LogicalPorts#list.
+// Possible value for ``attachmentType`` of method LogicalPorts#list.
 const LogicalPorts_LIST_ATTACHMENT_TYPE_LOGICALROUTER = "LOGICALROUTER"
 
-// Possible value for “attachmentType“ of method LogicalPorts#list.
+// Possible value for ``attachmentType`` of method LogicalPorts#list.
 const LogicalPorts_LIST_ATTACHMENT_TYPE_BRIDGEENDPOINT = "BRIDGEENDPOINT"
 
-// Possible value for “attachmentType“ of method LogicalPorts#list.
+// Possible value for ``attachmentType`` of method LogicalPorts#list.
 const LogicalPorts_LIST_ATTACHMENT_TYPE_DHCP_SERVICE = "DHCP_SERVICE"
 
-// Possible value for “attachmentType“ of method LogicalPorts#list.
+// Possible value for ``attachmentType`` of method LogicalPorts#list.
 const LogicalPorts_LIST_ATTACHMENT_TYPE_METADATA_PROXY = "METADATA_PROXY"
 
-// Possible value for “attachmentType“ of method LogicalPorts#list.
+// Possible value for ``attachmentType`` of method LogicalPorts#list.
 const LogicalPorts_LIST_ATTACHMENT_TYPE_L2VPN_SESSION = "L2VPN_SESSION"
 
-// Possible value for “attachmentType“ of method LogicalPorts#list.
+// Possible value for ``attachmentType`` of method LogicalPorts#list.
 const LogicalPorts_LIST_ATTACHMENT_TYPE_NONE = "NONE"
 
 func logicalPortsCreateInputType() vapiBindings_.StructType {

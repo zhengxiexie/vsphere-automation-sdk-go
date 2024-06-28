@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “serviceType“ of method GroupServiceAssociations#list.
+// Possible value for ``serviceType`` of method GroupServiceAssociations#list.
 const GroupServiceAssociations_LIST_SERVICE_TYPE_FIREWALL = "firewall"
 
-// Possible value for “serviceType“ of method GroupServiceAssociations#list.
+// Possible value for ``serviceType`` of method GroupServiceAssociations#list.
 const GroupServiceAssociations_LIST_SERVICE_TYPE_IPFIX = "ipfix"
 
 func groupServiceAssociationsListInputType() vapiBindings_.StructType {

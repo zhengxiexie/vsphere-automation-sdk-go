@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “context“ of method AffectedVms#create.
+// Possible value for ``context`` of method AffectedVms#create.
 const AffectedVms_CREATE_CONTEXT_PROJECTS = "ALL_PROJECTS"
 
 func affectedVmsCreateInputType() vapiBindings_.StructType {

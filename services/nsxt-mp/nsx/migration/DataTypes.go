@@ -18,34 +18,34 @@ import (
 	"reflect"
 )
 
-// Possible value for “fileType“ of method Data#delete.
+// Possible value for ``fileType`` of method Data#delete.
 const Data_DELETE_FILE_TYPE_VRA_INPUT = "VRA_INPUT"
 
-// Possible value for “fileType“ of method Data#delete.
+// Possible value for ``fileType`` of method Data#delete.
 const Data_DELETE_FILE_TYPE_EDGE_CUTOVER_MAPPING = "EDGE_CUTOVER_MAPPING"
 
-// Possible value for “fileType“ of method Data#delete.
+// Possible value for ``fileType`` of method Data#delete.
 const Data_DELETE_FILE_TYPE_BYOT_L3_MAPPING = "BYOT_L3_MAPPING"
 
-// Possible value for “fileType“ of method Data#delete.
+// Possible value for ``fileType`` of method Data#delete.
 const Data_DELETE_FILE_TYPE_AVI_LB_MAPPING = "AVI_LB_MAPPING"
 
-// Possible value for “fileType“ of method Data#get.
+// Possible value for ``fileType`` of method Data#get.
 const Data_GET_FILE_TYPE_VRA_INPUT = "VRA_INPUT"
 
-// Possible value for “fileType“ of method Data#get.
+// Possible value for ``fileType`` of method Data#get.
 const Data_GET_FILE_TYPE_VRA_OUTPUT = "VRA_OUTPUT"
 
-// Possible value for “fileType“ of method Data#get.
+// Possible value for ``fileType`` of method Data#get.
 const Data_GET_FILE_TYPE_EDGE_CUTOVER_MAPPING = "EDGE_CUTOVER_MAPPING"
 
-// Possible value for “fileType“ of method Data#get.
+// Possible value for ``fileType`` of method Data#get.
 const Data_GET_FILE_TYPE_BYOT_L3_MAPPING = "BYOT_L3_MAPPING"
 
-// Possible value for “fileType“ of method Data#get.
+// Possible value for ``fileType`` of method Data#get.
 const Data_GET_FILE_TYPE_AVI_LB_MAPPING = "AVI_LB_MAPPING"
 
-// Possible value for “fileType“ of method Data#get.
+// Possible value for ``fileType`` of method Data#get.
 const Data_GET_FILE_TYPE_MIGRATION_REPORT = "MIGRATION_REPORT"
 
 func dataDeleteInputType() vapiBindings_.StructType {

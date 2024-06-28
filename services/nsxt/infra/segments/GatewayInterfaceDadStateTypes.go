@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method GatewayInterfaceDadState#get.
+// Possible value for ``source`` of method GatewayInterfaceDadState#get.
 const GatewayInterfaceDadState_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method GatewayInterfaceDadState#get.
+// Possible value for ``source`` of method GatewayInterfaceDadState#get.
 const GatewayInterfaceDadState_GET_SOURCE_CACHED = "cached"
 
 func gatewayInterfaceDadStateGetInputType() vapiBindings_.StructType {

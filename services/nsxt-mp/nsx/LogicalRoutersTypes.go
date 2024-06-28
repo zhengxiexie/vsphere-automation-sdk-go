@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “routerType“ of method LogicalRouters#list.
+// Possible value for ``routerType`` of method LogicalRouters#list.
 const LogicalRouters_LIST_ROUTER_TYPE_TIER0 = "TIER0"
 
-// Possible value for “routerType“ of method LogicalRouters#list.
+// Possible value for ``routerType`` of method LogicalRouters#list.
 const LogicalRouters_LIST_ROUTER_TYPE_TIER1 = "TIER1"
 
-// Possible value for “routerType“ of method LogicalRouters#list.
+// Possible value for ``routerType`` of method LogicalRouters#list.
 const LogicalRouters_LIST_ROUTER_TYPE_VRF = "VRF"
 
 func logicalRoutersCreateInputType() vapiBindings_.StructType {

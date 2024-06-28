@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method ComputeCollections#create.
+// Possible value for ``action`` of method ComputeCollections#create.
 const ComputeCollections_CREATE_ACTION_NSX = "remove_nsx"
 
 func computeCollectionsCreateInputType() vapiBindings_.StructType {

@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “sessionType“ of method Sessions#list.
+// Possible value for ``sessionType`` of method Sessions#list.
 const Sessions_LIST_SESSION_TYPE_POLICYBASEDIPSECVPNSESSION = "PolicyBasedIPSecVPNSession"
 
-// Possible value for “sessionType“ of method Sessions#list.
+// Possible value for ``sessionType`` of method Sessions#list.
 const Sessions_LIST_SESSION_TYPE_ROUTEBASEDIPSECVPNSESSION = "RouteBasedIPSecVPNSession"
 
 func sessionsCreateInputType() vapiBindings_.StructType {

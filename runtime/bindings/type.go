@@ -43,7 +43,7 @@ func NewIntegerType() IntegerType {
 	return IntegerType{}
 }
 
-// implements BindingType
+//implements BindingType
 type StringType struct{}
 
 func NewStringType() StringType {

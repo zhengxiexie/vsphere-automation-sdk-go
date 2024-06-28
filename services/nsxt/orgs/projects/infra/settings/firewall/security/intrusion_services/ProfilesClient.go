@@ -20,7 +20,7 @@ const _ = vapiCore_.SupportedByRuntimeVersion2
 
 type ProfilesClient interface {
 
-	// Delete intrusion detection profile.
+	// This routine will delete IDS profile for provided profile id
 	//
 	// @param profileIdParam Profile ID (required)
 	// @param orgIdParam (required)
@@ -33,7 +33,7 @@ type ProfilesClient interface {
 	// @throws NotFound  Not Found
 	Delete(profileIdParam string, orgIdParam string, projectIdParam string) error
 
-	// Read intrusion detection profile
+	// This routine will read intrusion detection profile for provided profile id
 	//
 	// @param profileIdParam Profile ID (required)
 	// @param orgIdParam (required)
@@ -47,7 +47,7 @@ type ProfilesClient interface {
 	// @throws NotFound  Not Found
 	Get(profileIdParam string, orgIdParam string, projectIdParam string) (nsx_policyModel.IdsProfile, error)
 
-	// List intrusion detection profiles.
+	// This routine will list all IDS profiles present in system.
 	//
 	// @param orgIdParam (required)
 	// @param projectIdParam (required)
@@ -66,7 +66,7 @@ type ProfilesClient interface {
 	// @throws NotFound  Not Found
 	List(orgIdParam string, projectIdParam string, cursorParam *string, includeMarkForDeleteObjectsParam *bool, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.IdsProfileListResult, error)
 
-	// Patch intrusion detection system profile.
+	// User can provide Profile Severity, Criteria and Override the Signature in the request
 	//
 	// @param profileIdParam Profile ID (required)
 	// @param orgIdParam (required)
@@ -80,7 +80,7 @@ type ProfilesClient interface {
 	// @throws NotFound  Not Found
 	Patch(profileIdParam string, orgIdParam string, projectIdParam string, idsProfileParam nsx_policyModel.IdsProfile) error
 
-	// Update intrusion detection profile.
+	// This routine will create or update IDS profile. User can provide Profile Severity, Criteria and can also Override the Signature in the request
 	//
 	// @param profileIdParam Profile ID (required)
 	// @param orgIdParam (required)

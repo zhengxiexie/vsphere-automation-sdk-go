@@ -18,16 +18,16 @@ import (
 	"reflect"
 )
 
-// Possible value for “networkLayer“ of method FeedbackResponse#acceptrecommended.
+// Possible value for ``networkLayer`` of method FeedbackResponse#acceptrecommended.
 const FeedbackResponse_ACCEPTRECOMMENDED_NETWORK_LAYER_L2 = "L2"
 
-// Possible value for “networkLayer“ of method FeedbackResponse#acceptrecommended.
+// Possible value for ``networkLayer`` of method FeedbackResponse#acceptrecommended.
 const FeedbackResponse_ACCEPTRECOMMENDED_NETWORK_LAYER_L3_L7 = "L3_L7"
 
-// Possible value for “networkLayer“ of method FeedbackResponse#update.
+// Possible value for ``networkLayer`` of method FeedbackResponse#update.
 const FeedbackResponse_UPDATE_NETWORK_LAYER_L2 = "L2"
 
-// Possible value for “networkLayer“ of method FeedbackResponse#update.
+// Possible value for ``networkLayer`` of method FeedbackResponse#update.
 const FeedbackResponse_UPDATE_NETWORK_LAYER_L3_L7 = "L3_L7"
 
 func feedbackResponseAcceptrecommendedInputType() vapiBindings_.StructType {

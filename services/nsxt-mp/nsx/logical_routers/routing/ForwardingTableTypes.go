@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “componentType“ of method ForwardingTable#list.
+// Possible value for ``componentType`` of method ForwardingTable#list.
 const ForwardingTable_LIST_COMPONENT_TYPE_ROUTES = "DR_ROUTES"
 
-// Possible value for “source“ of method ForwardingTable#list.
+// Possible value for ``source`` of method ForwardingTable#list.
 const ForwardingTable_LIST_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method ForwardingTable#list.
+// Possible value for ``source`` of method ForwardingTable#list.
 const ForwardingTable_LIST_SOURCE_CACHED = "cached"
 
 func forwardingTableListInputType() vapiBindings_.StructType {

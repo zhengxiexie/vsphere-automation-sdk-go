@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “context“ of method IdsSummary#create.
+// Possible value for ``context`` of method IdsSummary#create.
 const IdsSummary_CREATE_CONTEXT_PROJECTS = "ALL_PROJECTS"
 
 func idsSummaryCreateInputType() vapiBindings_.StructType {

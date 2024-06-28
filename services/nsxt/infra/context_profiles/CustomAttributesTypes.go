@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method CustomAttributes#create.
+// Possible value for ``action`` of method CustomAttributes#create.
 const CustomAttributes_CREATE_ACTION_ADD = "add"
 
-// Possible value for “action“ of method CustomAttributes#create.
+// Possible value for ``action`` of method CustomAttributes#create.
 const CustomAttributes_CREATE_ACTION_REMOVE = "remove"
 
 func customAttributesCreateInputType() vapiBindings_.StructType {

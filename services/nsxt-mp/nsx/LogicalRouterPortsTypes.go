@@ -18,28 +18,28 @@ import (
 	"reflect"
 )
 
-// Possible value for “resourceType“ of method LogicalRouterPorts#list.
+// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERUPLINKPORT = "LogicalRouterUpLinkPort"
 
-// Possible value for “resourceType“ of method LogicalRouterPorts#list.
+// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERDOWNLINKPORT = "LogicalRouterDownLinkPort"
 
-// Possible value for “resourceType“ of method LogicalRouterPorts#list.
+// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERLINKPORTONTIER0 = "LogicalRouterLinkPortOnTIER0"
 
-// Possible value for “resourceType“ of method LogicalRouterPorts#list.
+// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERLINKPORTONTIER1 = "LogicalRouterLinkPortOnTIER1"
 
-// Possible value for “resourceType“ of method LogicalRouterPorts#list.
+// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERLOOPBACKPORT = "LogicalRouterLoopbackPort"
 
-// Possible value for “resourceType“ of method LogicalRouterPorts#list.
+// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERIPTUNNELPORT = "LogicalRouterIPTunnelPort"
 
-// Possible value for “resourceType“ of method LogicalRouterPorts#list.
+// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERCENTRALIZEDSERVICEPORT = "LogicalRouterCentralizedServicePort"
 
-// Possible value for “resourceType“ of method LogicalRouterPorts#list.
+// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERGRETUNNELPORT = "LogicalRouterGreTunnelPort"
 
 func logicalRouterPortsCreateInputType() vapiBindings_.StructType {

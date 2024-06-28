@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method PathExpressions#create.
+// Possible value for ``action`` of method PathExpressions#create.
 const PathExpressions_CREATE_ACTION_ADD = "add"
 
-// Possible value for “action“ of method PathExpressions#create.
+// Possible value for ``action`` of method PathExpressions#create.
 const PathExpressions_CREATE_ACTION_REMOVE = "remove"
 
 func pathExpressionsCreateInputType() vapiBindings_.StructType {

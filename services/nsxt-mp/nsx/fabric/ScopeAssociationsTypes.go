@@ -18,16 +18,16 @@ import (
 	"reflect"
 )
 
-// Possible value for “discoveredResourceType“ of method ScopeAssociations#list.
+// Possible value for ``discoveredResourceType`` of method ScopeAssociations#list.
 const ScopeAssociations_LIST_DISCOVERED_RESOURCE_TYPE_VIRTUALMACHINE = "VirtualMachine"
 
-// Possible value for “discoveredResourceType“ of method ScopeAssociations#list.
+// Possible value for ``discoveredResourceType`` of method ScopeAssociations#list.
 const ScopeAssociations_LIST_DISCOVERED_RESOURCE_TYPE_COMPUTECOLLECTION = "ComputeCollection"
 
-// Possible value for “scopeType“ of method ScopeAssociations#list.
+// Possible value for ``scopeType`` of method ScopeAssociations#list.
 const ScopeAssociations_LIST_SCOPE_TYPE_VPC = "VPC"
 
-// Possible value for “scopeType“ of method ScopeAssociations#list.
+// Possible value for ``scopeType`` of method ScopeAssociations#list.
 const ScopeAssociations_LIST_SCOPE_TYPE_PROJECT = "Project"
 
 func scopeAssociationsAddInputType() vapiBindings_.StructType {

@@ -17,7 +17,7 @@ import (
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The “Command“ interface provides methods to get information about command line interface (CLI) commands.
+// The ``Command`` interface provides methods to get information about command line interface (CLI) commands.
 type CommandClient interface {
 
 	// Returns the identifiers of all commands, or commands in a specific namespace.

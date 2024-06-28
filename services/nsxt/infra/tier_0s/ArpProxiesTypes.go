@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method ArpProxies#list.
+// Possible value for ``source`` of method ArpProxies#list.
 const ArpProxies_LIST_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method ArpProxies#list.
+// Possible value for ``source`` of method ArpProxies#list.
 const ArpProxies_LIST_SOURCE_CACHED = "cached"
 
 func arpProxiesListInputType() vapiBindings_.StructType {

@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method MacTable#list.
+// Possible value for ``source`` of method MacTable#list.
 const MacTable_LIST_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method MacTable#list.
+// Possible value for ``source`` of method MacTable#list.
 const MacTable_LIST_SOURCE_CACHED = "cached"
 
 func macTableListInputType() vapiBindings_.StructType {

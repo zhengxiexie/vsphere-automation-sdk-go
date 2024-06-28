@@ -19,7 +19,7 @@ const _ = vapiCore_.SupportedByRuntimeVersion2
 
 // Operations to retrieve information about the routing information in a vAPI component.
 //
-//	A Component is said to contain routing information if any of its packages, services or methods contain routing information
+//  A Component is said to contain routing information if any of its packages, services or methods contain routing information
 type ComponentClient interface {
 
 	// List all the vAPI components that contain operations which have routing information.

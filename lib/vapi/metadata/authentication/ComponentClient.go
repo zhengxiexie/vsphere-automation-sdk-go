@@ -17,9 +17,9 @@ import (
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The “Component“ interface provides methods to retrieve authentication information of a component element.
+// The ``Component`` interface provides methods to retrieve authentication information of a component element.
 //
-//	A component element is said to contain authentication information if any one of package elements contained in it has authentication information.
+//  A component element is said to contain authentication information if any one of package elements contained in it has authentication information.
 type ComponentClient interface {
 
 	// Returns the identifiers for the component elements that have authentication information.

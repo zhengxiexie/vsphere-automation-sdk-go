@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “context“ of method IdsEvents#create.
+// Possible value for ``context`` of method IdsEvents#create.
 const IdsEvents_CREATE_CONTEXT_PROJECTS = "ALL_PROJECTS"
 
 func idsEventsCreateInputType() vapiBindings_.StructType {

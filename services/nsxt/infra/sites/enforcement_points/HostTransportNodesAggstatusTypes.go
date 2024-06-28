@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “nodeType“ of method HostTransportNodesAggstatus#get.
+// Possible value for ``nodeType`` of method HostTransportNodesAggstatus#get.
 const HostTransportNodesAggstatus_GET_NODE_TYPE_HOST = "HOST"
 
-// Possible value for “nodeType“ of method HostTransportNodesAggstatus#get.
+// Possible value for ``nodeType`` of method HostTransportNodesAggstatus#get.
 const HostTransportNodesAggstatus_GET_NODE_TYPE_EDGE = "EDGE"
 
 func hostTransportNodesAggstatusGetInputType() vapiBindings_.StructType {

@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “type“ of method Crls#list.
+// Possible value for ``type`` of method Crls#list.
 const Crls_LIST_TYPE_CLUSTER_API_CERTIFICATE = "cluster_api_certificate"
 
-// Possible value for “type“ of method Crls#list.
+// Possible value for ``type`` of method Crls#list.
 const Crls_LIST_TYPE_API_CERTIFICATE = "api_certificate"
 
 func crlsGetInputType() vapiBindings_.StructType {

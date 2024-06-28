@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method FirewallIdentityStoreLdapServer#create.
+// Possible value for ``action`` of method FirewallIdentityStoreLdapServer#create.
 const FirewallIdentityStoreLdapServer_CREATE_ACTION_CONNECTIVITY = "CONNECTIVITY"
 
 func firewallIdentityStoreLdapServerCreateInputType() vapiBindings_.StructType {

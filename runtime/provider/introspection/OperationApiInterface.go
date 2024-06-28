@@ -115,8 +115,8 @@ func (operationApiInterface *OperationApiInterface) Invoke(ctx *core.ExecutionCo
 	return method(ctx, methodID, input)
 }
 
-// TODO:
-// refactor this
+//TODO:
+//refactor this
 func (operationApiInterface *OperationApiInterface) getListOfMethodIds() map[string]core.MethodIdentifier {
 	var methods = make(map[string]core.MethodIdentifier)
 	for key, _ := range operationApiInterface.methods {

@@ -26,17 +26,14 @@ type JwtAuthenticationHandler struct {
 // VerificationKeyCache#Refresh and will retry signature verification. Retry is done only
 // once.
 // parameters
-//
-//	keyProvider  VerificationKeyProvider used for retrieving signing keys during
-//	             JWT validation. Must not be nil.
-//	configOptions  a set of optional JwtHandlerConfigOption
-//
+//  keyProvider  VerificationKeyProvider used for retrieving signing keys during
+//               JWT validation. Must not be nil.
+//  configOptions  a set of optional JwtHandlerConfigOption
 // returns
-//
-//	By default the handler is created with a:
-//	  - maximum clock skew value of 10 minutes
-//	  - acceptable audiences containing a single element - "vmware-tes:vapi"
-//	values above are configurable via the configOptions parameter.
+//  By default the handler is created with a:
+//    - maximum clock skew value of 10 minutes
+//    - acceptable audiences containing a single element - "vmware-tes:vapi"
+//  values above are configurable via the configOptions parameter.
 func NewJwtAuthenticationHandler(keyProvider VerificationKeyProvider, configOptions ...JwtHandlerConfigOption) (*JwtAuthenticationHandler, error) {
 	if keyProvider == nil {
 		return nil, fmt.Errorf("key provider must not be nil")
@@ -111,9 +108,8 @@ func (j *JwtAuthenticationHandler) Authenticate(ctx core.SecurityContext) (*User
 
 // Validates the passed claims via a created JwtVapiClaimsValidator
 // returns
-//
-//	nil for successful validation
-//	error otherwise
+//  nil for successful validation
+//  error otherwise
 func (j *JwtAuthenticationHandler) validateClaims(claims *JwtVapiClaims) error {
 	claimsValidator := *NewJwtVapiClaimsValidator(claims, j.maxClockSkew, j.acceptableAudiences)
 	return claimsValidator.Valid()
@@ -122,9 +118,8 @@ func (j *JwtAuthenticationHandler) validateClaims(claims *JwtVapiClaims) error {
 // Validates the signature of a parsed JWT token against keys fetched by the keyProvider.
 // validateSignatureAgainstKey is utilized for validations against individual keys
 // returns
-//
-//	nil for successful validation against any of the keys
-//	error if no key matches the signature or the keyProvider fails to retrieve them
+//  nil for successful validation against any of the keys
+//  error if no key matches the signature or the keyProvider fails to retrieve them
 func (j *JwtAuthenticationHandler) validateSignature(token *jwt.Token, tokenParts []string, issuer string) error {
 	keys, err := j.keyProvider.Get(issuer)
 	if err != nil {
@@ -166,9 +161,8 @@ func acquireTokenFromContext(ctx core.SecurityContext) (string, error) {
 // Along with the parsed token object an array of strings representing the '.'
 // separated token is returned.
 // returns
-//
-//	(*jwt.Token, []string, nil) for successful parsing
-//	(nil, nil, error) otherwise
+//  (*jwt.Token, []string, nil) for successful parsing
+//  (nil, nil, error) otherwise
 func parseUnverified(tokenString string) (*jwt.Token, []string, error) {
 	parser := jwt.NewParser(jwt.WithoutClaimsValidation())
 	claims := &JwtVapiClaims{}
@@ -184,9 +178,8 @@ func parseUnverified(tokenString string) (*jwt.Token, []string, error) {
 // Validates the signature of a parsed JWT token via jwt.SigningMethod.Verify,
 // where the token's specific jwt.SigningMethod is derived from the 'alg' header
 // returns
-//
-//	nil for successful validation
-//	error otherwise
+//  nil for successful validation
+//  error otherwise
 func validateSignatureAgainstKey(token *jwt.Token, tokenParts []string, key interface{}) error {
 	// jwt.SigningMethod.Verify requires signing string and signature as separate inputs
 	return token.Method.Verify(strings.Join(tokenParts[0:2], "."), token.Signature, key)

@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “operation“ of method FirewallIpReputationFeed#create.
+// Possible value for ``operation`` of method FirewallIpReputationFeed#create.
 const FirewallIpReputationFeed_CREATE_OPERATION_ENABLE_AUTO_DOWNLOAD = "enable_auto_download"
 
-// Possible value for “operation“ of method FirewallIpReputationFeed#create.
+// Possible value for ``operation`` of method FirewallIpReputationFeed#create.
 const FirewallIpReputationFeed_CREATE_OPERATION_DISABLE_AUTO_DOWNLOAD = "disable_auto_download"
 
-// Possible value for “operation“ of method FirewallIpReputationFeed#create.
+// Possible value for ``operation`` of method FirewallIpReputationFeed#create.
 const FirewallIpReputationFeed_CREATE_OPERATION_DOWNLOAD = "download"
 
 func firewallIpReputationFeedCreateInputType() vapiBindings_.StructType {

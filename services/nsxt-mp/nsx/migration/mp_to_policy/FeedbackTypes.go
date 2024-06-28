@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “location“ of method Feedback#list.
+// Possible value for ``location`` of method Feedback#list.
 const Feedback_LIST_LOCATION_CURRENT = "CURRENT"
 
-// Possible value for “location“ of method Feedback#list.
+// Possible value for ``location`` of method Feedback#list.
 const Feedback_LIST_LOCATION_ARCHIVED = "ARCHIVED"
 
 func feedbackListInputType() vapiBindings_.StructType {

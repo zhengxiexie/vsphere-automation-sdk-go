@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “oidcType“ of method OidcUris#list.
+// Possible value for ``oidcType`` of method OidcUris#list.
 const OidcUris_LIST_OIDC_TYPE_VCENTER = "vcenter"
 
-// Possible value for “oidcType“ of method OidcUris#list.
+// Possible value for ``oidcType`` of method OidcUris#list.
 const OidcUris_LIST_OIDC_TYPE_WS_ONE = "ws_one"
 
-// Possible value for “oidcType“ of method OidcUris#list.
+// Possible value for ``oidcType`` of method OidcUris#list.
 const OidcUris_LIST_OIDC_TYPE_CSP = "csp"
 
 func oidcUrisCreateInputType() vapiBindings_.StructType {

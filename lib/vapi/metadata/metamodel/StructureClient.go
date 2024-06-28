@@ -17,7 +17,7 @@ import (
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The “Structure“ interface providers methods to retrieve metamodel information about a structure element in the interface definition language.
+// The ``Structure`` interface providers methods to retrieve metamodel information about a structure element in the interface definition language.
 type StructureClient interface {
 
 	// Returns the identifiers for the structure elements that are contained in all the package elements and service elements.

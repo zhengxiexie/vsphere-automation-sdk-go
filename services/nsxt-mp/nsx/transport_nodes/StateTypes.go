@@ -18,34 +18,34 @@ import (
 	"reflect"
 )
 
-// Possible value for “mmState“ of method State#list.
+// Possible value for ``mmState`` of method State#list.
 const State_LIST_MM_STATE_ENTERING = "ENTERING"
 
-// Possible value for “mmState“ of method State#list.
+// Possible value for ``mmState`` of method State#list.
 const State_LIST_MM_STATE_ENABLED = "ENABLED"
 
-// Possible value for “mmState“ of method State#list.
+// Possible value for ``mmState`` of method State#list.
 const State_LIST_MM_STATE_EXITING = "EXITING"
 
-// Possible value for “mmState“ of method State#list.
+// Possible value for ``mmState`` of method State#list.
 const State_LIST_MM_STATE_DISABLED = "DISABLED"
 
-// Possible value for “status“ of method State#list.
+// Possible value for ``status`` of method State#list.
 const State_LIST_STATUS_PENDING = "PENDING"
 
-// Possible value for “status“ of method State#list.
+// Possible value for ``status`` of method State#list.
 const State_LIST_STATUS_IN_PROGRESS = "IN_PROGRESS"
 
-// Possible value for “status“ of method State#list.
+// Possible value for ``status`` of method State#list.
 const State_LIST_STATUS_SUCCESS = "SUCCESS"
 
-// Possible value for “status“ of method State#list.
+// Possible value for ``status`` of method State#list.
 const State_LIST_STATUS_PARTIAL_SUCCESS = "PARTIAL_SUCCESS"
 
-// Possible value for “status“ of method State#list.
+// Possible value for ``status`` of method State#list.
 const State_LIST_STATUS_FAILED = "FAILED"
 
-// Possible value for “status“ of method State#list.
+// Possible value for ``status`` of method State#list.
 const State_LIST_STATUS_ORPHANED = "ORPHANED"
 
 func stateGetInputType() vapiBindings_.StructType {

@@ -18,16 +18,16 @@ import (
 	"reflect"
 )
 
-// Possible value for “status“ of method PnicBondStatus#list.
+// Possible value for ``status`` of method PnicBondStatus#list.
 const PnicBondStatus_LIST_STATUS_UNKNOWN = "UNKNOWN"
 
-// Possible value for “status“ of method PnicBondStatus#list.
+// Possible value for ``status`` of method PnicBondStatus#list.
 const PnicBondStatus_LIST_STATUS_UP = "UP"
 
-// Possible value for “status“ of method PnicBondStatus#list.
+// Possible value for ``status`` of method PnicBondStatus#list.
 const PnicBondStatus_LIST_STATUS_DOWN = "DOWN"
 
-// Possible value for “status“ of method PnicBondStatus#list.
+// Possible value for ``status`` of method PnicBondStatus#list.
 const PnicBondStatus_LIST_STATUS_DEGRADED = "DEGRADED"
 
 func pnicBondStatusListInputType() vapiBindings_.StructType {

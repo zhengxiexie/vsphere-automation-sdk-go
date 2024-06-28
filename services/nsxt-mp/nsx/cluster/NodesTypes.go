@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method Nodes#create.
+// Possible value for ``action`` of method Nodes#create.
 const Nodes_CREATE_ACTION_NODE = "add_cluster_node"
 
 func nodesCreateInputType() vapiBindings_.StructType {

@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “state“ of method Deployments#list.
+// Possible value for ``state`` of method Deployments#list.
 const Deployments_LIST_STATE_DEPLOYED = "DEPLOYED"
 
-// Possible value for “state“ of method Deployments#list.
+// Possible value for ``state`` of method Deployments#list.
 const Deployments_LIST_STATE_PENDING = "PENDING"
 
 func deploymentsCreateInputType() vapiBindings_.StructType {

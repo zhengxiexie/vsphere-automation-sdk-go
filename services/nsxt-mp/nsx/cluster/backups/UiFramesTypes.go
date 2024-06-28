@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “uiTabType“ of method Ui_frames#get.
+// Possible value for ``uiTabType`` of method Ui_frames#get.
 const UiFrames_GET_UI_TAB_TYPE_LOCAL_MANAGER_TAB = "LOCAL_MANAGER_TAB"
 
-// Possible value for “uiTabType“ of method Ui_frames#get.
+// Possible value for ``uiTabType`` of method Ui_frames#get.
 const UiFrames_GET_UI_TAB_TYPE_GLOBAL_MANAGER_TAB = "GLOBAL_MANAGER_TAB"
 
 func uiFramesGetInputType() vapiBindings_.StructType {

@@ -18,25 +18,25 @@ import (
 	"reflect"
 )
 
-// Possible value for “type“ of method Monitors#list.
+// Possible value for ``type`` of method Monitors#list.
 const Monitors_LIST_TYPE_LBHTTPMONITOR = "LbHttpMonitor"
 
-// Possible value for “type“ of method Monitors#list.
+// Possible value for ``type`` of method Monitors#list.
 const Monitors_LIST_TYPE_LBHTTPSMONITOR = "LbHttpsMonitor"
 
-// Possible value for “type“ of method Monitors#list.
+// Possible value for ``type`` of method Monitors#list.
 const Monitors_LIST_TYPE_LBICMPMONITOR = "LbIcmpMonitor"
 
-// Possible value for “type“ of method Monitors#list.
+// Possible value for ``type`` of method Monitors#list.
 const Monitors_LIST_TYPE_LBTCPMONITOR = "LbTcpMonitor"
 
-// Possible value for “type“ of method Monitors#list.
+// Possible value for ``type`` of method Monitors#list.
 const Monitors_LIST_TYPE_LBUDPMONITOR = "LbUdpMonitor"
 
-// Possible value for “type“ of method Monitors#list.
+// Possible value for ``type`` of method Monitors#list.
 const Monitors_LIST_TYPE_LBPASSIVEMONITOR = "LbPassiveMonitor"
 
-// Possible value for “type“ of method Monitors#list.
+// Possible value for ``type`` of method Monitors#list.
 const Monitors_LIST_TYPE_LBACTIVEMONITOR = "LbActiveMonitor"
 
 func monitorsCreateInputType() vapiBindings_.StructType {

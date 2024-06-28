@@ -18,16 +18,16 @@ import (
 	"reflect"
 )
 
-// Possible value for “operation“ of method GatewayPolicies#revise.
+// Possible value for ``operation`` of method GatewayPolicies#revise.
 const GatewayPolicies_REVISE_OPERATION_TOP = "insert_top"
 
-// Possible value for “operation“ of method GatewayPolicies#revise.
+// Possible value for ``operation`` of method GatewayPolicies#revise.
 const GatewayPolicies_REVISE_OPERATION_BOTTOM = "insert_bottom"
 
-// Possible value for “operation“ of method GatewayPolicies#revise.
+// Possible value for ``operation`` of method GatewayPolicies#revise.
 const GatewayPolicies_REVISE_OPERATION_AFTER = "insert_after"
 
-// Possible value for “operation“ of method GatewayPolicies#revise.
+// Possible value for ``operation`` of method GatewayPolicies#revise.
 const GatewayPolicies_REVISE_OPERATION_BEFORE = "insert_before"
 
 func gatewayPoliciesDeleteInputType() vapiBindings_.StructType {

@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method Neighbors#unsetpassword.
+// Possible value for ``action`` of method Neighbors#unsetpassword.
 const Neighbors_UNSETPASSWORD_ACTION_PASSWORD = "clear_password"
 
 func neighborsCreateInputType() vapiBindings_.StructType {

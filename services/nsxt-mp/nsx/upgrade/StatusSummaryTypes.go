@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “selectionStatus“ of method StatusSummary#get.
+// Possible value for ``selectionStatus`` of method StatusSummary#get.
 const StatusSummary_GET_SELECTION_STATUS_SELECTED = "SELECTED"
 
-// Possible value for “selectionStatus“ of method StatusSummary#get.
+// Possible value for ``selectionStatus`` of method StatusSummary#get.
 const StatusSummary_GET_SELECTION_STATUS_DESELECTED = "DESELECTED"
 
-// Possible value for “selectionStatus“ of method StatusSummary#get.
+// Possible value for ``selectionStatus`` of method StatusSummary#get.
 const StatusSummary_GET_SELECTION_STATUS_ALL = "ALL"
 
 func statusSummaryGetInputType() vapiBindings_.StructType {

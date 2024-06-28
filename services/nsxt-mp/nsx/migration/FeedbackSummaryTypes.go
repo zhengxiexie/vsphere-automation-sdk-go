@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “networkLayer“ of method FeedbackSummary#list.
+// Possible value for ``networkLayer`` of method FeedbackSummary#list.
 const FeedbackSummary_LIST_NETWORK_LAYER_L2 = "L2"
 
-// Possible value for “networkLayer“ of method FeedbackSummary#list.
+// Possible value for ``networkLayer`` of method FeedbackSummary#list.
 const FeedbackSummary_LIST_NETWORK_LAYER_L3_L7 = "L3_L7"
 
 func feedbackSummaryListInputType() vapiBindings_.StructType {

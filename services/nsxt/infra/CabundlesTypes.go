@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “type“ of method Cabundles#list.
+// Possible value for ``type`` of method Cabundles#list.
 const Cabundles_LIST_TYPE_CLUSTER_API_CERTIFICATE = "cluster_api_certificate"
 
-// Possible value for “type“ of method Cabundles#list.
+// Possible value for ``type`` of method Cabundles#list.
 const Cabundles_LIST_TYPE_API_CERTIFICATE = "api_certificate"
 
 func cabundlesDeleteInputType() vapiBindings_.StructType {

@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method DnsForwarder#create.
+// Possible value for ``action`` of method DnsForwarder#create.
 const DnsForwarder_CREATE_ACTION_CACHE = "clear_cache"
 
 func dnsForwarderCreateInputType() vapiBindings_.StructType {

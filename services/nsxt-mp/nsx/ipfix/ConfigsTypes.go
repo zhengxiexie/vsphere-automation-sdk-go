@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “ipfixConfigType“ of method Configs#list.
+// Possible value for ``ipfixConfigType`` of method Configs#list.
 const Configs_LIST_IPFIX_CONFIG_TYPE_IPFIXDFWCONFIG = "IpfixDfwConfig"
 
 func configsCreateInputType() vapiBindings_.StructType {

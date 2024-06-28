@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “l3vpnSession“ of method L3vpns#list.
+// Possible value for ``l3vpnSession`` of method L3vpns#list.
 const L3vpns_LIST_L3VPN_SESSION_POLICYBASEDL3VPNSESSION = "PolicyBasedL3VpnSession"
 
-// Possible value for “l3vpnSession“ of method L3vpns#list.
+// Possible value for ``l3vpnSession`` of method L3vpns#list.
 const L3vpns_LIST_L3VPN_SESSION_ROUTEBASEDL3VPNSESSION = "RouteBasedL3VpnSession"
 
 func l3vpnsDeleteInputType() vapiBindings_.StructType {

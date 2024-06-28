@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “resourceType“ of method ClusterProfiles#list.
+// Possible value for ``resourceType`` of method ClusterProfiles#list.
 const ClusterProfiles_LIST_RESOURCE_TYPE_EDGEHIGHAVAILABILITYPROFILE = "EdgeHighAvailabilityProfile"
 
-// Possible value for “resourceType“ of method ClusterProfiles#list.
+// Possible value for ``resourceType`` of method ClusterProfiles#list.
 const ClusterProfiles_LIST_RESOURCE_TYPE_BRIDGEHIGHAVAILABILITYCLUSTERPROFILE = "BridgeHighAvailabilityClusterProfile"
 
 func clusterProfilesCreateInputType() vapiBindings_.StructType {

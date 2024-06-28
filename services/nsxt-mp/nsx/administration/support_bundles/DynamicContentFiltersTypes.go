@@ -18,7 +18,7 @@ import (
 	"reflect"
 )
 
-// Possible value for “scope“ of method DynamicContentFilters#get.
+// Possible value for ``scope`` of method DynamicContentFilters#get.
 const DynamicContentFilters_GET_SCOPE_NAPP = "NAPP"
 
 func dynamicContentFiltersGetInputType() vapiBindings_.StructType {

@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method MacAddressExpressions#create.
+// Possible value for ``action`` of method MacAddressExpressions#create.
 const MacAddressExpressions_CREATE_ACTION_ADD = "add"
 
-// Possible value for “action“ of method MacAddressExpressions#create.
+// Possible value for ``action`` of method MacAddressExpressions#create.
 const MacAddressExpressions_CREATE_ACTION_REMOVE = "remove"
 
 func macAddressExpressionsCreateInputType() vapiBindings_.StructType {

@@ -17,9 +17,9 @@ import (
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The “Enumeration“ interface provides methods to retrieve metamodel information about an enumeration element in the interface definition language.
+// The ``Enumeration`` interface provides methods to retrieve metamodel information about an enumeration element in the interface definition language.
 //
-//	The ``Enumeration`` has a list of enumeration value elements.
+//  The ``Enumeration`` has a list of enumeration value elements.
 type EnumerationClient interface {
 
 	// Returns the identifiers for the enumeration elements that are contained in all the package elements, service elements and structure elements.

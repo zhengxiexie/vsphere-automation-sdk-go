@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “mappingOption“ of method Setup#setesgtoroutermappingoption.
+// Possible value for ``mappingOption`` of method Setup#setesgtoroutermappingoption.
 const Setup_SETESGTOROUTERMAPPINGOPTION_MAPPING_OPTION_UI = "UI"
 
-// Possible value for “mappingOption“ of method Setup#setesgtoroutermappingoption.
+// Possible value for ``mappingOption`` of method Setup#setesgtoroutermappingoption.
 const Setup_SETESGTOROUTERMAPPINGOPTION_MAPPING_OPTION_FILE_UPLOAD = "FILE_UPLOAD"
 
-// Possible value for “mappingOption“ of method Setup#setesgtoroutermappingoption.
+// Possible value for ``mappingOption`` of method Setup#setesgtoroutermappingoption.
 const Setup_SETESGTOROUTERMAPPINGOPTION_MAPPING_OPTION_NO_MAPPING = "NO_MAPPING"
 
 func setupAddalbinfoInputType() vapiBindings_.StructType {

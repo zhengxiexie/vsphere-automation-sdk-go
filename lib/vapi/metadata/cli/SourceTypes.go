@@ -20,7 +20,7 @@ import (
 	"reflect"
 )
 
-// The “Info“ class contains the metadata source information.
+// The ``Info`` class contains the metadata source information.
 type SourceInfo struct {
 	// English language human readable description of the source.
 	Description string
@@ -49,7 +49,7 @@ func (s *SourceInfo) GetDataValue__() (vapiData_.DataValue, []error) {
 	return dataVal, nil
 }
 
-// The “CreateSpec“ class contains the registration information of a CLI source.
+// The ``CreateSpec`` class contains the registration information of a CLI source.
 type SourceCreateSpec struct {
 	// English language human readable description of the source.
 	Description string

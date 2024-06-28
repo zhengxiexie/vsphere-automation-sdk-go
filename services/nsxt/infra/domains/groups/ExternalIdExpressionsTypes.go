@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method ExternalIdExpressions#create.
+// Possible value for ``action`` of method ExternalIdExpressions#create.
 const ExternalIdExpressions_CREATE_ACTION_ADD = "add"
 
-// Possible value for “action“ of method ExternalIdExpressions#create.
+// Possible value for ``action`` of method ExternalIdExpressions#create.
 const ExternalIdExpressions_CREATE_ACTION_REMOVE = "remove"
 
 func externalIdExpressionsCreateInputType() vapiBindings_.StructType {

@@ -18,13 +18,13 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method HostTransportNodes#updatemaintenancemode.
+// Possible value for ``action`` of method HostTransportNodes#updatemaintenancemode.
 const HostTransportNodes_UPDATEMAINTENANCEMODE_ACTION_ENTER_MAINTENANCE_MODE = "enter_maintenance_mode"
 
-// Possible value for “action“ of method HostTransportNodes#updatemaintenancemode.
+// Possible value for ``action`` of method HostTransportNodes#updatemaintenancemode.
 const HostTransportNodes_UPDATEMAINTENANCEMODE_ACTION_FORCED_ENTER_MAINTENANCE_MODE = "forced_enter_maintenance_mode"
 
-// Possible value for “action“ of method HostTransportNodes#updatemaintenancemode.
+// Possible value for ``action`` of method HostTransportNodes#updatemaintenancemode.
 const HostTransportNodes_UPDATEMAINTENANCEMODE_ACTION_EXIT_MAINTENANCE_MODE = "exit_maintenance_mode"
 
 func hostTransportNodesDeleteInputType() vapiBindings_.StructType {

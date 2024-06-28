@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “action“ of method NsGroups#addorremoveexpression.
+// Possible value for ``action`` of method NsGroups#addorremoveexpression.
 const NsGroups_ADDORREMOVEEXPRESSION_ACTION_ADD_MEMBERS = "ADD_MEMBERS"
 
-// Possible value for “action“ of method NsGroups#addorremoveexpression.
+// Possible value for ``action`` of method NsGroups#addorremoveexpression.
 const NsGroups_ADDORREMOVEEXPRESSION_ACTION_REMOVE_MEMBERS = "REMOVE_MEMBERS"
 
 func nsGroupsAddorremoveexpressionInputType() vapiBindings_.StructType {

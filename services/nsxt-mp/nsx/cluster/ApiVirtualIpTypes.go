@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “force“ of method ApiVirtualIp#setvirtualip.
+// Possible value for ``force`` of method ApiVirtualIp#setvirtualip.
 const ApiVirtualIp_SETVIRTUALIP_FORCE_TRUE = "true"
 
-// Possible value for “force“ of method ApiVirtualIp#setvirtualip.
+// Possible value for ``force`` of method ApiVirtualIp#setvirtualip.
 const ApiVirtualIp_SETVIRTUALIP_FORCE_FALSE = "false"
 
 func apiVirtualIpClearvirtualipInputType() vapiBindings_.StructType {

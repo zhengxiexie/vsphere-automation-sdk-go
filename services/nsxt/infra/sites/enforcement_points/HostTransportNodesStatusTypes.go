@@ -18,22 +18,22 @@ import (
 	"reflect"
 )
 
-// Possible value for “source“ of method HostTransportNodesStatus#getall.
+// Possible value for ``source`` of method HostTransportNodesStatus#getall.
 const HostTransportNodesStatus_GETALL_SOURCE_REALTIME = "realtime"
 
-// Possible value for “source“ of method HostTransportNodesStatus#getall.
+// Possible value for ``source`` of method HostTransportNodesStatus#getall.
 const HostTransportNodesStatus_GETALL_SOURCE_CACHED = "cached"
 
-// Possible value for “status“ of method HostTransportNodesStatus#getall.
+// Possible value for ``status`` of method HostTransportNodesStatus#getall.
 const HostTransportNodesStatus_GETALL_STATUS_UP = "UP"
 
-// Possible value for “status“ of method HostTransportNodesStatus#getall.
+// Possible value for ``status`` of method HostTransportNodesStatus#getall.
 const HostTransportNodesStatus_GETALL_STATUS_DOWN = "DOWN"
 
-// Possible value for “status“ of method HostTransportNodesStatus#getall.
+// Possible value for ``status`` of method HostTransportNodesStatus#getall.
 const HostTransportNodesStatus_GETALL_STATUS_DEGRADED = "DEGRADED"
 
-// Possible value for “status“ of method HostTransportNodesStatus#getall.
+// Possible value for ``status`` of method HostTransportNodesStatus#getall.
 const HostTransportNodesStatus_GETALL_STATUS_UNKNOWN = "UNKNOWN"
 
 func hostTransportNodesStatusGetallInputType() vapiBindings_.StructType {

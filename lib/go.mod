@@ -2,9 +2,11 @@ module github.com/vmware/vsphere-automation-sdk-go/lib
 
 go 1.17
 
-replace github.com/vmware/vsphere-automation-sdk-go/runtime => github.com/zhengxiexie/vsphere-automation-sdk-go/runtime v0.7.3-0.20240627094926-cc78d883c909
+replace (
+	github.com/vmware/vsphere-automation-sdk-go/runtime => github.com/zhengxiexie/vsphere-automation-sdk-go/runtime v0.7.3-0.20240627100112-b3371cbc535c
+)
 
-require github.com/vmware/vsphere-automation-sdk-go/runtime v0.7.1-0.20240611083326-25a4e1834c4d
+require github.com/vmware/vsphere-automation-sdk-go/runtime v0.6.0
 
 require (
 	github.com/beevik/etree v1.1.0 // indirect

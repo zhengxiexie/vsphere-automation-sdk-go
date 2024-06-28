@@ -18,10 +18,10 @@ import (
 	"reflect"
 )
 
-// Possible value for “onError“ of method ImportK8sNpToDfw#create.
+// Possible value for ``onError`` of method ImportK8sNpToDfw#create.
 const ImportK8sNpToDfw_CREATE_ON_ERROR_ABORT = "ABORT"
 
-// Possible value for “onError“ of method ImportK8sNpToDfw#create.
+// Possible value for ``onError`` of method ImportK8sNpToDfw#create.
 const ImportK8sNpToDfw_CREATE_ON_ERROR_CONTINUE = "CONTINUE"
 
 func importK8sNpToDfwCreateInputType() vapiBindings_.StructType {
