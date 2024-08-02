@@ -20,33 +20,6 @@ const _ = vapiCore_.SupportedByRuntimeVersion2
 
 type EdgeClusterProfilesClient interface {
 
-	// Delete a edge cluster high availability profile.
-	//
-	// @param siteIdParam (required)
-	// @param enforcementpointIdParam (required)
-	// @param edgeClusterProfileIdParam (required)
-	//
-	// @throws InvalidRequest  Bad Request, Precondition Failed
-	// @throws Unauthorized  Forbidden
-	// @throws ServiceUnavailable  Service Unavailable
-	// @throws InternalServerError  Internal Server Error
-	// @throws NotFound  Not Found
-	Delete(siteIdParam string, enforcementpointIdParam string, edgeClusterProfileIdParam string) error
-
-	// Get a edge cluster high availability profile.
-	//
-	// @param siteIdParam (required)
-	// @param enforcementpointIdParam (required)
-	// @param edgeClusterProfileIdParam (required)
-	// @return com.vmware.nsx_policy.model.PolicyEdgeHighAvailabilityProfile
-	//
-	// @throws InvalidRequest  Bad Request, Precondition Failed
-	// @throws Unauthorized  Forbidden
-	// @throws ServiceUnavailable  Service Unavailable
-	// @throws InternalServerError  Internal Server Error
-	// @throws NotFound  Not Found
-	Get(siteIdParam string, enforcementpointIdParam string, edgeClusterProfileIdParam string) (nsx_policyModel.PolicyEdgeHighAvailabilityProfile, error)
-
 	// List edge cluster high availability profiles.
 	//
 	// @param siteIdParam (required)
@@ -65,35 +38,6 @@ type EdgeClusterProfilesClient interface {
 	// @throws InternalServerError  Internal Server Error
 	// @throws NotFound  Not Found
 	List(siteIdParam string, enforcementpointIdParam string, cursorParam *string, includeMarkForDeleteObjectsParam *bool, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.EdgeClusterHighAvailabilityProfileListResult, error)
-
-	// Creates a new edge cluster high availability profile.
-	//
-	// @param siteIdParam (required)
-	// @param enforcementpointIdParam (required)
-	// @param edgeClusterProfileIdParam (required)
-	// @param policyEdgeHighAvailabilityProfileParam (required)
-	//
-	// @throws InvalidRequest  Bad Request, Precondition Failed
-	// @throws Unauthorized  Forbidden
-	// @throws ServiceUnavailable  Service Unavailable
-	// @throws InternalServerError  Internal Server Error
-	// @throws NotFound  Not Found
-	Patch(siteIdParam string, enforcementpointIdParam string, edgeClusterProfileIdParam string, policyEdgeHighAvailabilityProfileParam nsx_policyModel.PolicyEdgeHighAvailabilityProfile) error
-
-	// Create or Update a edge cluster high availability profile.
-	//
-	// @param siteIdParam (required)
-	// @param enforcementpointIdParam (required)
-	// @param edgeClusterProfileIdParam (required)
-	// @param policyEdgeHighAvailabilityProfileParam (required)
-	// @return com.vmware.nsx_policy.model.PolicyEdgeHighAvailabilityProfile
-	//
-	// @throws InvalidRequest  Bad Request, Precondition Failed
-	// @throws Unauthorized  Forbidden
-	// @throws ServiceUnavailable  Service Unavailable
-	// @throws InternalServerError  Internal Server Error
-	// @throws NotFound  Not Found
-	Update(siteIdParam string, enforcementpointIdParam string, edgeClusterProfileIdParam string, policyEdgeHighAvailabilityProfileParam nsx_policyModel.PolicyEdgeHighAvailabilityProfile) (nsx_policyModel.PolicyEdgeHighAvailabilityProfile, error)
 }
 
 type edgeClusterProfilesClient struct {
@@ -105,11 +49,7 @@ type edgeClusterProfilesClient struct {
 func NewEdgeClusterProfilesClient(connector vapiProtocolClient_.Connector) *edgeClusterProfilesClient {
 	interfaceIdentifier := vapiCore_.NewInterfaceIdentifier("com.vmware.nsx_policy.infra.sites.enforcement_points.edge_cluster_profiles")
 	methodIdentifiers := map[string]vapiCore_.MethodIdentifier{
-		"delete": vapiCore_.NewMethodIdentifier(interfaceIdentifier, "delete"),
-		"get":    vapiCore_.NewMethodIdentifier(interfaceIdentifier, "get"),
-		"list":   vapiCore_.NewMethodIdentifier(interfaceIdentifier, "list"),
-		"patch":  vapiCore_.NewMethodIdentifier(interfaceIdentifier, "patch"),
-		"update": vapiCore_.NewMethodIdentifier(interfaceIdentifier, "update"),
+		"list": vapiCore_.NewMethodIdentifier(interfaceIdentifier, "list"),
 	}
 	interfaceDefinition := vapiCore_.NewInterfaceDefinition(interfaceIdentifier, methodIdentifiers)
 	errorsBindingMap := make(map[string]vapiBindings_.BindingType)
@@ -123,68 +63,6 @@ func (eIface *edgeClusterProfilesClient) GetErrorBindingType(errorName string) v
 		return entry
 	}
 	return vapiStdErrors_.ERROR_BINDINGS_MAP[errorName]
-}
-
-func (eIface *edgeClusterProfilesClient) Delete(siteIdParam string, enforcementpointIdParam string, edgeClusterProfileIdParam string) error {
-	typeConverter := eIface.connector.TypeConverter()
-	executionContext := eIface.connector.NewExecutionContext()
-	operationRestMetaData := edgeClusterProfilesDeleteRestMetadata()
-	executionContext.SetConnectionMetadata(vapiCore_.RESTMetadataKey, operationRestMetaData)
-	executionContext.SetConnectionMetadata(vapiCore_.ResponseTypeKey, vapiCore_.NewResponseType(true, false))
-
-	sv := vapiBindings_.NewStructValueBuilder(edgeClusterProfilesDeleteInputType(), typeConverter)
-	sv.AddStructField("SiteId", siteIdParam)
-	sv.AddStructField("EnforcementpointId", enforcementpointIdParam)
-	sv.AddStructField("EdgeClusterProfileId", edgeClusterProfileIdParam)
-	inputDataValue, inputError := sv.GetStructValue()
-	if inputError != nil {
-		return vapiBindings_.VAPIerrorsToError(inputError)
-	}
-
-	methodResult := eIface.connector.GetApiProvider().Invoke("com.vmware.nsx_policy.infra.sites.enforcement_points.edge_cluster_profiles", "delete", inputDataValue, executionContext)
-	if methodResult.IsSuccess() {
-		return nil
-	} else {
-		methodError, errorInError := typeConverter.ConvertToGolang(methodResult.Error(), eIface.GetErrorBindingType(methodResult.Error().Name()))
-		if errorInError != nil {
-			return vapiBindings_.VAPIerrorsToError(errorInError)
-		}
-		return methodError.(error)
-	}
-}
-
-func (eIface *edgeClusterProfilesClient) Get(siteIdParam string, enforcementpointIdParam string, edgeClusterProfileIdParam string) (nsx_policyModel.PolicyEdgeHighAvailabilityProfile, error) {
-	typeConverter := eIface.connector.TypeConverter()
-	executionContext := eIface.connector.NewExecutionContext()
-	operationRestMetaData := edgeClusterProfilesGetRestMetadata()
-	executionContext.SetConnectionMetadata(vapiCore_.RESTMetadataKey, operationRestMetaData)
-	executionContext.SetConnectionMetadata(vapiCore_.ResponseTypeKey, vapiCore_.NewResponseType(true, false))
-
-	sv := vapiBindings_.NewStructValueBuilder(edgeClusterProfilesGetInputType(), typeConverter)
-	sv.AddStructField("SiteId", siteIdParam)
-	sv.AddStructField("EnforcementpointId", enforcementpointIdParam)
-	sv.AddStructField("EdgeClusterProfileId", edgeClusterProfileIdParam)
-	inputDataValue, inputError := sv.GetStructValue()
-	if inputError != nil {
-		var emptyOutput nsx_policyModel.PolicyEdgeHighAvailabilityProfile
-		return emptyOutput, vapiBindings_.VAPIerrorsToError(inputError)
-	}
-
-	methodResult := eIface.connector.GetApiProvider().Invoke("com.vmware.nsx_policy.infra.sites.enforcement_points.edge_cluster_profiles", "get", inputDataValue, executionContext)
-	var emptyOutput nsx_policyModel.PolicyEdgeHighAvailabilityProfile
-	if methodResult.IsSuccess() {
-		output, errorInOutput := typeConverter.ConvertToGolang(methodResult.Output(), EdgeClusterProfilesGetOutputType())
-		if errorInOutput != nil {
-			return emptyOutput, vapiBindings_.VAPIerrorsToError(errorInOutput)
-		}
-		return output.(nsx_policyModel.PolicyEdgeHighAvailabilityProfile), nil
-	} else {
-		methodError, errorInError := typeConverter.ConvertToGolang(methodResult.Error(), eIface.GetErrorBindingType(methodResult.Error().Name()))
-		if errorInError != nil {
-			return emptyOutput, vapiBindings_.VAPIerrorsToError(errorInError)
-		}
-		return emptyOutput, methodError.(error)
-	}
 }
 
 func (eIface *edgeClusterProfilesClient) List(siteIdParam string, enforcementpointIdParam string, cursorParam *string, includeMarkForDeleteObjectsParam *bool, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.EdgeClusterHighAvailabilityProfileListResult, error) {
@@ -217,70 +95,6 @@ func (eIface *edgeClusterProfilesClient) List(siteIdParam string, enforcementpoi
 			return emptyOutput, vapiBindings_.VAPIerrorsToError(errorInOutput)
 		}
 		return output.(nsx_policyModel.EdgeClusterHighAvailabilityProfileListResult), nil
-	} else {
-		methodError, errorInError := typeConverter.ConvertToGolang(methodResult.Error(), eIface.GetErrorBindingType(methodResult.Error().Name()))
-		if errorInError != nil {
-			return emptyOutput, vapiBindings_.VAPIerrorsToError(errorInError)
-		}
-		return emptyOutput, methodError.(error)
-	}
-}
-
-func (eIface *edgeClusterProfilesClient) Patch(siteIdParam string, enforcementpointIdParam string, edgeClusterProfileIdParam string, policyEdgeHighAvailabilityProfileParam nsx_policyModel.PolicyEdgeHighAvailabilityProfile) error {
-	typeConverter := eIface.connector.TypeConverter()
-	executionContext := eIface.connector.NewExecutionContext()
-	operationRestMetaData := edgeClusterProfilesPatchRestMetadata()
-	executionContext.SetConnectionMetadata(vapiCore_.RESTMetadataKey, operationRestMetaData)
-	executionContext.SetConnectionMetadata(vapiCore_.ResponseTypeKey, vapiCore_.NewResponseType(true, false))
-
-	sv := vapiBindings_.NewStructValueBuilder(edgeClusterProfilesPatchInputType(), typeConverter)
-	sv.AddStructField("SiteId", siteIdParam)
-	sv.AddStructField("EnforcementpointId", enforcementpointIdParam)
-	sv.AddStructField("EdgeClusterProfileId", edgeClusterProfileIdParam)
-	sv.AddStructField("PolicyEdgeHighAvailabilityProfile", policyEdgeHighAvailabilityProfileParam)
-	inputDataValue, inputError := sv.GetStructValue()
-	if inputError != nil {
-		return vapiBindings_.VAPIerrorsToError(inputError)
-	}
-
-	methodResult := eIface.connector.GetApiProvider().Invoke("com.vmware.nsx_policy.infra.sites.enforcement_points.edge_cluster_profiles", "patch", inputDataValue, executionContext)
-	if methodResult.IsSuccess() {
-		return nil
-	} else {
-		methodError, errorInError := typeConverter.ConvertToGolang(methodResult.Error(), eIface.GetErrorBindingType(methodResult.Error().Name()))
-		if errorInError != nil {
-			return vapiBindings_.VAPIerrorsToError(errorInError)
-		}
-		return methodError.(error)
-	}
-}
-
-func (eIface *edgeClusterProfilesClient) Update(siteIdParam string, enforcementpointIdParam string, edgeClusterProfileIdParam string, policyEdgeHighAvailabilityProfileParam nsx_policyModel.PolicyEdgeHighAvailabilityProfile) (nsx_policyModel.PolicyEdgeHighAvailabilityProfile, error) {
-	typeConverter := eIface.connector.TypeConverter()
-	executionContext := eIface.connector.NewExecutionContext()
-	operationRestMetaData := edgeClusterProfilesUpdateRestMetadata()
-	executionContext.SetConnectionMetadata(vapiCore_.RESTMetadataKey, operationRestMetaData)
-	executionContext.SetConnectionMetadata(vapiCore_.ResponseTypeKey, vapiCore_.NewResponseType(true, false))
-
-	sv := vapiBindings_.NewStructValueBuilder(edgeClusterProfilesUpdateInputType(), typeConverter)
-	sv.AddStructField("SiteId", siteIdParam)
-	sv.AddStructField("EnforcementpointId", enforcementpointIdParam)
-	sv.AddStructField("EdgeClusterProfileId", edgeClusterProfileIdParam)
-	sv.AddStructField("PolicyEdgeHighAvailabilityProfile", policyEdgeHighAvailabilityProfileParam)
-	inputDataValue, inputError := sv.GetStructValue()
-	if inputError != nil {
-		var emptyOutput nsx_policyModel.PolicyEdgeHighAvailabilityProfile
-		return emptyOutput, vapiBindings_.VAPIerrorsToError(inputError)
-	}
-
-	methodResult := eIface.connector.GetApiProvider().Invoke("com.vmware.nsx_policy.infra.sites.enforcement_points.edge_cluster_profiles", "update", inputDataValue, executionContext)
-	var emptyOutput nsx_policyModel.PolicyEdgeHighAvailabilityProfile
-	if methodResult.IsSuccess() {
-		output, errorInOutput := typeConverter.ConvertToGolang(methodResult.Output(), EdgeClusterProfilesUpdateOutputType())
-		if errorInOutput != nil {
-			return emptyOutput, vapiBindings_.VAPIerrorsToError(errorInOutput)
-		}
-		return output.(nsx_policyModel.PolicyEdgeHighAvailabilityProfile), nil
 	} else {
 		methodError, errorInError := typeConverter.ConvertToGolang(methodResult.Error(), eIface.GetErrorBindingType(methodResult.Error().Name()))
 		if errorInError != nil {

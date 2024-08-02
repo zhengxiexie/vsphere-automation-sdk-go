@@ -22,8 +22,8 @@ type AdvertisedNetworksClient interface {
 
 	// Return networks which are advertised to connected VPC.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcIdParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
 	// @param enforcementPointPathParam Enforcement point path (optional)

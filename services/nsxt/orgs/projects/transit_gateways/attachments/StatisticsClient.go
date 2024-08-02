@@ -22,8 +22,8 @@ type StatisticsClient interface {
 
 	// Retrieve the total tx, rx dropped, total bytes, total packets of all traffic that flows to the TGW attachment.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param attachmentIdParam (required)
 	// @return com.vmware.nsx_policy.model.TransitGatewayAttachmentStatistics

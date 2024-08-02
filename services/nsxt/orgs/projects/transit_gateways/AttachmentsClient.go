@@ -22,8 +22,8 @@ type AttachmentsClient interface {
 
 	// Delete transit gateway attachment
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param attachmentIdParam (required)
 	//
@@ -36,8 +36,8 @@ type AttachmentsClient interface {
 
 	// Read transit gateway attachment
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param attachmentIdParam (required)
 	// @return com.vmware.nsx_policy.model.TransitGatewayAttachment
@@ -51,8 +51,8 @@ type AttachmentsClient interface {
 
 	// List transit gateway attachments
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
 	// @param includeMarkForDeleteObjectsParam Include objects that are marked for deletion in results (optional, default to false)
@@ -71,8 +71,8 @@ type AttachmentsClient interface {
 
 	// Create or Update transit gateway attachment
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param attachmentIdParam (required)
 	// @param transitGatewayAttachmentParam (required)
@@ -86,8 +86,8 @@ type AttachmentsClient interface {
 
 	// Create or Update transit gateway attachment
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param attachmentIdParam (required)
 	// @param transitGatewayAttachmentParam (required)

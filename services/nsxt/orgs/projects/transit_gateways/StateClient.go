@@ -22,8 +22,8 @@ type StateClient interface {
 
 	// Get the transit gateway's runtime state that includes the transport node and the HA details, if applicable.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @return com.vmware.nsx_policy.model.TransitGatewayState
 	//

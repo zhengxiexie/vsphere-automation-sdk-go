@@ -22,12 +22,16 @@ type ForwardingTableClient interface {
 
 	// Get forwarding table from TGW.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param componentTypeParam Define the DR routes. (optional)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
+	// @param edgeIdParam UUID of edge node (optional)
+	// @param edgePathParam Policy path of edge node (optional)
 	// @param enforcementPointPathParam Enforcement point path (optional)
+	// @param hostIdParam UUID of host node (optional)
+	// @param hostPathParam Policy path of host node (optional)
 	// @param includedFieldsParam Comma separated list of fields that should be included in query result (optional)
 	// @param networkPrefixParam IPAddress or CIDR Block (optional)
 	// @param pageSizeParam Maximum number of results to return in this page (server may return fewer) (optional, default to 1000)
@@ -41,7 +45,7 @@ type ForwardingTableClient interface {
 	// @throws ServiceUnavailable  Service Unavailable
 	// @throws InternalServerError  Internal Server Error
 	// @throws NotFound  Not Found
-	List(orgIdParam string, projectIdParam string, transitGatewayIdParam string, componentTypeParam *string, cursorParam *string, enforcementPointPathParam *string, includedFieldsParam *string, networkPrefixParam *string, pageSizeParam *int64, routeSourceParam *string, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.RoutingTableListResult, error)
+	List(orgIdParam string, projectIdParam string, transitGatewayIdParam string, componentTypeParam *string, cursorParam *string, edgeIdParam *string, edgePathParam *string, enforcementPointPathParam *string, hostIdParam *string, hostPathParam *string, includedFieldsParam *string, networkPrefixParam *string, pageSizeParam *int64, routeSourceParam *string, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.RoutingTableListResult, error)
 }
 
 type forwardingTableClient struct {
@@ -69,7 +73,7 @@ func (fIface *forwardingTableClient) GetErrorBindingType(errorName string) vapiB
 	return vapiStdErrors_.ERROR_BINDINGS_MAP[errorName]
 }
 
-func (fIface *forwardingTableClient) List(orgIdParam string, projectIdParam string, transitGatewayIdParam string, componentTypeParam *string, cursorParam *string, enforcementPointPathParam *string, includedFieldsParam *string, networkPrefixParam *string, pageSizeParam *int64, routeSourceParam *string, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.RoutingTableListResult, error) {
+func (fIface *forwardingTableClient) List(orgIdParam string, projectIdParam string, transitGatewayIdParam string, componentTypeParam *string, cursorParam *string, edgeIdParam *string, edgePathParam *string, enforcementPointPathParam *string, hostIdParam *string, hostPathParam *string, includedFieldsParam *string, networkPrefixParam *string, pageSizeParam *int64, routeSourceParam *string, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.RoutingTableListResult, error) {
 	typeConverter := fIface.connector.TypeConverter()
 	executionContext := fIface.connector.NewExecutionContext()
 	operationRestMetaData := forwardingTableListRestMetadata()
@@ -82,7 +86,11 @@ func (fIface *forwardingTableClient) List(orgIdParam string, projectIdParam stri
 	sv.AddStructField("TransitGatewayId", transitGatewayIdParam)
 	sv.AddStructField("ComponentType", componentTypeParam)
 	sv.AddStructField("Cursor", cursorParam)
+	sv.AddStructField("EdgeId", edgeIdParam)
+	sv.AddStructField("EdgePath", edgePathParam)
 	sv.AddStructField("EnforcementPointPath", enforcementPointPathParam)
+	sv.AddStructField("HostId", hostIdParam)
+	sv.AddStructField("HostPath", hostPathParam)
 	sv.AddStructField("IncludedFields", includedFieldsParam)
 	sv.AddStructField("NetworkPrefix", networkPrefixParam)
 	sv.AddStructField("PageSize", pageSizeParam)

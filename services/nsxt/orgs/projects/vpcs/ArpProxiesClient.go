@@ -22,8 +22,8 @@ type ArpProxiesClient interface {
 
 	// Returns ARP proxy table for a VPC.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcIdParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
 	// @param enforcementPointPathParam String Path of the enforcement point (optional)
@@ -32,6 +32,7 @@ type ArpProxiesClient interface {
 	// @param sortAscendingParam (optional)
 	// @param sortByParam Field by which records are sorted (optional)
 	// @param sourceParam Data source type. (optional)
+	// @param transportNodeIdParam TransportNode Id (optional)
 	// @return com.vmware.nsx_policy.model.PolicyArpProxyTableListResult
 	//
 	// @throws InvalidRequest  Bad Request, Precondition Failed
@@ -39,7 +40,7 @@ type ArpProxiesClient interface {
 	// @throws ServiceUnavailable  Service Unavailable
 	// @throws InternalServerError  Internal Server Error
 	// @throws NotFound  Not Found
-	List(orgIdParam string, projectIdParam string, vpcIdParam string, cursorParam *string, enforcementPointPathParam *string, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string, sourceParam *string) (nsx_policyModel.PolicyArpProxyTableListResult, error)
+	List(orgIdParam string, projectIdParam string, vpcIdParam string, cursorParam *string, enforcementPointPathParam *string, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string, sourceParam *string, transportNodeIdParam *string) (nsx_policyModel.PolicyArpProxyTableListResult, error)
 }
 
 type arpProxiesClient struct {
@@ -67,7 +68,7 @@ func (aIface *arpProxiesClient) GetErrorBindingType(errorName string) vapiBindin
 	return vapiStdErrors_.ERROR_BINDINGS_MAP[errorName]
 }
 
-func (aIface *arpProxiesClient) List(orgIdParam string, projectIdParam string, vpcIdParam string, cursorParam *string, enforcementPointPathParam *string, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string, sourceParam *string) (nsx_policyModel.PolicyArpProxyTableListResult, error) {
+func (aIface *arpProxiesClient) List(orgIdParam string, projectIdParam string, vpcIdParam string, cursorParam *string, enforcementPointPathParam *string, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string, sourceParam *string, transportNodeIdParam *string) (nsx_policyModel.PolicyArpProxyTableListResult, error) {
 	typeConverter := aIface.connector.TypeConverter()
 	executionContext := aIface.connector.NewExecutionContext()
 	operationRestMetaData := arpProxiesListRestMetadata()
@@ -85,6 +86,7 @@ func (aIface *arpProxiesClient) List(orgIdParam string, projectIdParam string, v
 	sv.AddStructField("SortAscending", sortAscendingParam)
 	sv.AddStructField("SortBy", sortByParam)
 	sv.AddStructField("Source", sourceParam)
+	sv.AddStructField("TransportNodeId", transportNodeIdParam)
 	inputDataValue, inputError := sv.GetStructValue()
 	if inputError != nil {
 		var emptyOutput nsx_policyModel.PolicyArpProxyTableListResult

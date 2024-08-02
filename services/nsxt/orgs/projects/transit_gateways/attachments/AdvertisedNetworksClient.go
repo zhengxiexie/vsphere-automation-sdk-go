@@ -22,8 +22,8 @@ type AdvertisedNetworksClient interface {
 
 	// Returns information about all networks which are advertised to the TGW external attachment.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param externalAttachmentIdParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)

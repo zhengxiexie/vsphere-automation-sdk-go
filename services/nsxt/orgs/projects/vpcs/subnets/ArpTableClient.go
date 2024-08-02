@@ -20,14 +20,16 @@ const _ = vapiCore_.SupportedByRuntimeVersion2
 
 type ArpTableClient interface {
 
-	// Returns ARP table (IPv4) or Neighbor Discovery table (IPv6) for the interface (downlink) attaching subnet to VPC, on a edge node specified in edge_path parameter. The edge_path parameter is mandatory.
+	// Returns ARP table (IPv4) or Neighbor Discovery table (IPv6) for the interface (downlink) attaching subnet to VPC, on a edge node specified in edge_path parameter.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcIdParam (required)
 	// @param subnetIdParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
+	// @param edgePathParam Policy path of edge node (optional)
 	// @param enforcementPointPathParam Enforcement point path (optional)
+	// @param hostTransportNodePathParam Policy path of host transport node (optional)
 	// @param includedFieldsParam Comma separated list of fields that should be included in query result (optional)
 	// @param pageSizeParam Maximum number of results to return in this page (server may return fewer) (optional, default to 1000)
 	// @param sortAscendingParam (optional)
@@ -39,7 +41,7 @@ type ArpTableClient interface {
 	// @throws ServiceUnavailable  Service Unavailable
 	// @throws InternalServerError  Internal Server Error
 	// @throws NotFound  Not Found
-	List(orgIdParam string, projectIdParam string, vpcIdParam string, subnetIdParam string, cursorParam *string, enforcementPointPathParam *string, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.InterfaceArpTable, error)
+	List(orgIdParam string, projectIdParam string, vpcIdParam string, subnetIdParam string, cursorParam *string, edgePathParam *string, enforcementPointPathParam *string, hostTransportNodePathParam *string, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.InterfaceArpTable, error)
 }
 
 type arpTableClient struct {
@@ -67,7 +69,7 @@ func (aIface *arpTableClient) GetErrorBindingType(errorName string) vapiBindings
 	return vapiStdErrors_.ERROR_BINDINGS_MAP[errorName]
 }
 
-func (aIface *arpTableClient) List(orgIdParam string, projectIdParam string, vpcIdParam string, subnetIdParam string, cursorParam *string, enforcementPointPathParam *string, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.InterfaceArpTable, error) {
+func (aIface *arpTableClient) List(orgIdParam string, projectIdParam string, vpcIdParam string, subnetIdParam string, cursorParam *string, edgePathParam *string, enforcementPointPathParam *string, hostTransportNodePathParam *string, includedFieldsParam *string, pageSizeParam *int64, sortAscendingParam *bool, sortByParam *string) (nsx_policyModel.InterfaceArpTable, error) {
 	typeConverter := aIface.connector.TypeConverter()
 	executionContext := aIface.connector.NewExecutionContext()
 	operationRestMetaData := arpTableListRestMetadata()
@@ -80,7 +82,9 @@ func (aIface *arpTableClient) List(orgIdParam string, projectIdParam string, vpc
 	sv.AddStructField("VpcId", vpcIdParam)
 	sv.AddStructField("SubnetId", subnetIdParam)
 	sv.AddStructField("Cursor", cursorParam)
+	sv.AddStructField("EdgePath", edgePathParam)
 	sv.AddStructField("EnforcementPointPath", enforcementPointPathParam)
+	sv.AddStructField("HostTransportNodePath", hostTransportNodePathParam)
 	sv.AddStructField("IncludedFields", includedFieldsParam)
 	sv.AddStructField("PageSize", pageSizeParam)
 	sv.AddStructField("SortAscending", sortAscendingParam)

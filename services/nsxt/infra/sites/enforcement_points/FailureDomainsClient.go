@@ -24,20 +24,20 @@ type FailureDomainsClient interface {
 	//
 	// @param siteIdParam (required)
 	// @param enforcementpointIdParam (required)
-	// @param failureDomainNodeIdParam (required)
+	// @param failureDomainIdParam (required)
 	//
 	// @throws InvalidRequest  Bad Request, Precondition Failed
 	// @throws Unauthorized  Forbidden
 	// @throws ServiceUnavailable  Service Unavailable
 	// @throws InternalServerError  Internal Server Error
 	// @throws NotFound  Not Found
-	Delete(siteIdParam string, enforcementpointIdParam string, failureDomainNodeIdParam string) error
+	Delete(siteIdParam string, enforcementpointIdParam string, failureDomainIdParam string) error
 
 	// Creates a new Policy failure domain.
 	//
 	// @param siteIdParam (required)
 	// @param enforcementpointIdParam (required)
-	// @param failureDomainNodeIdParam (required)
+	// @param failureDomainIdParam (required)
 	// @return com.vmware.nsx_policy.model.PolicyFailureDomain
 	//
 	// @throws InvalidRequest  Bad Request, Precondition Failed
@@ -45,7 +45,7 @@ type FailureDomainsClient interface {
 	// @throws ServiceUnavailable  Service Unavailable
 	// @throws InternalServerError  Internal Server Error
 	// @throws NotFound  Not Found
-	Get(siteIdParam string, enforcementpointIdParam string, failureDomainNodeIdParam string) (nsx_policyModel.PolicyFailureDomain, error)
+	Get(siteIdParam string, enforcementpointIdParam string, failureDomainIdParam string) (nsx_policyModel.PolicyFailureDomain, error)
 
 	// Creates a new Policy failure domain.
 	//
@@ -125,7 +125,7 @@ func (fIface *failureDomainsClient) GetErrorBindingType(errorName string) vapiBi
 	return vapiStdErrors_.ERROR_BINDINGS_MAP[errorName]
 }
 
-func (fIface *failureDomainsClient) Delete(siteIdParam string, enforcementpointIdParam string, failureDomainNodeIdParam string) error {
+func (fIface *failureDomainsClient) Delete(siteIdParam string, enforcementpointIdParam string, failureDomainIdParam string) error {
 	typeConverter := fIface.connector.TypeConverter()
 	executionContext := fIface.connector.NewExecutionContext()
 	operationRestMetaData := failureDomainsDeleteRestMetadata()
@@ -135,7 +135,7 @@ func (fIface *failureDomainsClient) Delete(siteIdParam string, enforcementpointI
 	sv := vapiBindings_.NewStructValueBuilder(failureDomainsDeleteInputType(), typeConverter)
 	sv.AddStructField("SiteId", siteIdParam)
 	sv.AddStructField("EnforcementpointId", enforcementpointIdParam)
-	sv.AddStructField("FailureDomainNodeId", failureDomainNodeIdParam)
+	sv.AddStructField("FailureDomainId", failureDomainIdParam)
 	inputDataValue, inputError := sv.GetStructValue()
 	if inputError != nil {
 		return vapiBindings_.VAPIerrorsToError(inputError)
@@ -153,7 +153,7 @@ func (fIface *failureDomainsClient) Delete(siteIdParam string, enforcementpointI
 	}
 }
 
-func (fIface *failureDomainsClient) Get(siteIdParam string, enforcementpointIdParam string, failureDomainNodeIdParam string) (nsx_policyModel.PolicyFailureDomain, error) {
+func (fIface *failureDomainsClient) Get(siteIdParam string, enforcementpointIdParam string, failureDomainIdParam string) (nsx_policyModel.PolicyFailureDomain, error) {
 	typeConverter := fIface.connector.TypeConverter()
 	executionContext := fIface.connector.NewExecutionContext()
 	operationRestMetaData := failureDomainsGetRestMetadata()
@@ -163,7 +163,7 @@ func (fIface *failureDomainsClient) Get(siteIdParam string, enforcementpointIdPa
 	sv := vapiBindings_.NewStructValueBuilder(failureDomainsGetInputType(), typeConverter)
 	sv.AddStructField("SiteId", siteIdParam)
 	sv.AddStructField("EnforcementpointId", enforcementpointIdParam)
-	sv.AddStructField("FailureDomainNodeId", failureDomainNodeIdParam)
+	sv.AddStructField("FailureDomainId", failureDomainIdParam)
 	inputDataValue, inputError := sv.GetStructValue()
 	if inputError != nil {
 		var emptyOutput nsx_policyModel.PolicyFailureDomain

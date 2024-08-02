@@ -22,8 +22,8 @@ type DnsForwarderClient interface {
 
 	// Delete VPC transit gateway dns forwarder
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	//
 	// @throws InvalidRequest  Bad Request, Precondition Failed
@@ -35,8 +35,8 @@ type DnsForwarderClient interface {
 
 	// Read VPC transit gateway dns forwarder
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @return com.vmware.nsx_policy.model.PolicyDnsForwarder
 	//
@@ -49,8 +49,8 @@ type DnsForwarderClient interface {
 
 	// Create or Update VPC transit gateway dns forwarder
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param policyDnsForwarderParam (required)
 	//
@@ -63,8 +63,8 @@ type DnsForwarderClient interface {
 
 	// Create or Update VPC transit gateway dns forwarder
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param policyDnsForwarderParam (required)
 	// @return com.vmware.nsx_policy.model.PolicyDnsForwarder

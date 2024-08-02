@@ -22,8 +22,8 @@ type VpcConnectivityProfilesClient interface {
 
 	// Deletes the specified VPC Connectivity Profile.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcConnectivityProfileIdParam (required)
 	//
 	// @throws InvalidRequest  Bad Request, Precondition Failed
@@ -35,8 +35,8 @@ type VpcConnectivityProfilesClient interface {
 
 	// Get the VPC Connectivity Profile
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcConnectivityProfileIdParam (required)
 	// @return com.vmware.nsx_policy.model.VpcConnectivityProfile
 	//
@@ -49,8 +49,8 @@ type VpcConnectivityProfilesClient interface {
 
 	// List VPC Connectivity Profiles.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
 	// @param includeMarkForDeleteObjectsParam Include objects that are marked for deletion in results (optional, default to false)
 	// @param includedFieldsParam Comma separated list of fields that should be included in query result (optional)
@@ -68,8 +68,8 @@ type VpcConnectivityProfilesClient interface {
 
 	// Create VPC Connectivity Profile if not already present, otherwise update the VPC Connectivity Profile.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcConnectivityProfileIdParam (required)
 	// @param vpcConnectivityProfileParam (required)
 	//
@@ -82,8 +82,8 @@ type VpcConnectivityProfilesClient interface {
 
 	// If the VPC Connectivity Profile is not already present, create a VPC Connectivity Profile instance. If it already exists, replace the VPC Connectivity Profile instance with this object.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcConnectivityProfileIdParam (required)
 	// @param vpcConnectivityProfileParam (required)
 	// @return com.vmware.nsx_policy.model.VpcConnectivityProfile

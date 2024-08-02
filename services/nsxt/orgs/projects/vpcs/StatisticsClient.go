@@ -22,8 +22,8 @@ type StatisticsClient interface {
 
 	// Get VPC Statistics
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcIdParam (required)
 	// @return com.vmware.nsx_policy.model.VpcStatistics
 	//

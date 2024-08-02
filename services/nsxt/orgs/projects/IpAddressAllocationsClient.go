@@ -22,8 +22,8 @@ type IpAddressAllocationsClient interface {
 
 	// Releases the IP that was allocated for this allocation request
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param ipAddressAllocationIdParam (required)
 	//
 	// @throws InvalidRequest  Bad Request, Precondition Failed
@@ -35,8 +35,8 @@ type IpAddressAllocationsClient interface {
 
 	// Get detail information on Project ip allocation by giving ID.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param ipAddressAllocationIdParam (required)
 	// @return com.vmware.nsx_policy.model.ProjectIpAddressAllocation
 	//
@@ -49,8 +49,8 @@ type IpAddressAllocationsClient interface {
 
 	// List all the ip allocations for a Project.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
 	// @param includeMarkForDeleteObjectsParam Include objects that are marked for deletion in results (optional, default to false)
 	// @param includedFieldsParam Comma separated list of fields that should be included in query result (optional)
@@ -68,8 +68,8 @@ type IpAddressAllocationsClient interface {
 
 	// Create a Project ip allocation if it does not exist
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param ipAddressAllocationIdParam (required)
 	// @param projectIpAddressAllocationParam (required)
 	//
@@ -82,8 +82,8 @@ type IpAddressAllocationsClient interface {
 
 	// If a Project IP Address Allocation is absent, create a new one. If it already exists, replace the Project IP Address Allocation instance with the new object.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param ipAddressAllocationIdParam (required)
 	// @param projectIpAddressAllocationParam (required)
 	// @return com.vmware.nsx_policy.model.ProjectIpAddressAllocation

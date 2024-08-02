@@ -22,8 +22,8 @@ type StateClient interface {
 
 	// Get the VPC's runtime state that includes the gateway id and the HA details, if applicable.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcIdParam (required)
 	// @return com.vmware.nsx_policy.model.VpcState
 	//

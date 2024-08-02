@@ -22,8 +22,8 @@ type TransitGatewaysClient interface {
 
 	// Delete VPC transit gateway
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	//
 	// @throws InvalidRequest  Bad Request, Precondition Failed
@@ -35,8 +35,8 @@ type TransitGatewaysClient interface {
 
 	// Read VPC transit gateway
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @return com.vmware.nsx_policy.model.TransitGateway
 	//
@@ -49,8 +49,8 @@ type TransitGatewaysClient interface {
 
 	// Read VPC transit gateways
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
 	// @param includeMarkForDeleteObjectsParam Include objects that are marked for deletion in results (optional, default to false)
 	// @param includedFieldsParam Comma separated list of fields that should be included in query result (optional)
@@ -68,8 +68,8 @@ type TransitGatewaysClient interface {
 
 	// Create or Update VPC transit gateway
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param transitGatewayParam (required)
 	//
@@ -82,8 +82,8 @@ type TransitGatewaysClient interface {
 
 	// Create or Update VPC transit gateway
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param transitGatewayIdParam (required)
 	// @param transitGatewayParam (required)
 	// @return com.vmware.nsx_policy.model.TransitGateway

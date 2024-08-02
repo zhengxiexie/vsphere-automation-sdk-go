@@ -22,8 +22,8 @@ type VpcServiceProfilesClient interface {
 
 	// Deletes the specified VPC Service Profile.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcServiceProfileIdParam (required)
 	//
 	// @throws InvalidRequest  Bad Request, Precondition Failed
@@ -35,8 +35,8 @@ type VpcServiceProfilesClient interface {
 
 	// Get the VPC Service Profile
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcServiceProfileIdParam (required)
 	// @return com.vmware.nsx_policy.model.VpcServiceProfile
 	//
@@ -49,8 +49,8 @@ type VpcServiceProfilesClient interface {
 
 	// List VPC Service Profiles.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param cursorParam Opaque cursor to be used for getting next page of records (supplied by current result page) (optional)
 	// @param includeMarkForDeleteObjectsParam Include objects that are marked for deletion in results (optional, default to false)
 	// @param includedFieldsParam Comma separated list of fields that should be included in query result (optional)
@@ -68,8 +68,8 @@ type VpcServiceProfilesClient interface {
 
 	// Create VPC Service Profile if not already present, otherwise update the VPC Service Profile.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcServiceProfileIdParam (required)
 	// @param vpcServiceProfileParam (required)
 	//
@@ -82,8 +82,8 @@ type VpcServiceProfilesClient interface {
 
 	// If the VPC Service Profile is not already present, create a VPC Service Profile instance. If it already exists, replace the VPC Service Profile instance with this object.
 	//
-	// @param orgIdParam The organization ID (required)
-	// @param projectIdParam The project ID (required)
+	// @param orgIdParam (required)
+	// @param projectIdParam (required)
 	// @param vpcServiceProfileIdParam (required)
 	// @param vpcServiceProfileParam (required)
 	// @return com.vmware.nsx_policy.model.VpcServiceProfile

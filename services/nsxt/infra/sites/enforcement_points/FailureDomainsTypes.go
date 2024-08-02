@@ -23,10 +23,10 @@ func failureDomainsDeleteInputType() vapiBindings_.StructType {
 	fieldNameMap := make(map[string]string)
 	fields["site_id"] = vapiBindings_.NewStringType()
 	fields["enforcementpoint_id"] = vapiBindings_.NewStringType()
-	fields["failure_domain_node_id"] = vapiBindings_.NewStringType()
+	fields["failure_domain_id"] = vapiBindings_.NewStringType()
 	fieldNameMap["site_id"] = "SiteId"
 	fieldNameMap["enforcementpoint_id"] = "EnforcementpointId"
-	fieldNameMap["failure_domain_node_id"] = "FailureDomainNodeId"
+	fieldNameMap["failure_domain_id"] = "FailureDomainId"
 	var validators = []vapiBindings_.Validator{}
 	return vapiBindings_.NewStructType("operation-input", fields, reflect.TypeOf(vapiData_.StructValue{}), fieldNameMap, validators)
 }
@@ -46,19 +46,19 @@ func failureDomainsDeleteRestMetadata() vapiProtocol_.OperationRestMetadata {
 	bodyFieldsMap := map[string]string{}
 	fields["site_id"] = vapiBindings_.NewStringType()
 	fields["enforcementpoint_id"] = vapiBindings_.NewStringType()
-	fields["failure_domain_node_id"] = vapiBindings_.NewStringType()
+	fields["failure_domain_id"] = vapiBindings_.NewStringType()
 	fieldNameMap["site_id"] = "SiteId"
 	fieldNameMap["enforcementpoint_id"] = "EnforcementpointId"
-	fieldNameMap["failure_domain_node_id"] = "FailureDomainNodeId"
+	fieldNameMap["failure_domain_id"] = "FailureDomainId"
 	paramsTypeMap["enforcementpoint_id"] = vapiBindings_.NewStringType()
-	paramsTypeMap["failure_domain_node_id"] = vapiBindings_.NewStringType()
+	paramsTypeMap["failure_domain_id"] = vapiBindings_.NewStringType()
 	paramsTypeMap["site_id"] = vapiBindings_.NewStringType()
 	paramsTypeMap["siteId"] = vapiBindings_.NewStringType()
 	paramsTypeMap["enforcementpointId"] = vapiBindings_.NewStringType()
-	paramsTypeMap["failureDomainNodeId"] = vapiBindings_.NewStringType()
+	paramsTypeMap["failureDomainId"] = vapiBindings_.NewStringType()
 	pathParams["enforcementpoint_id"] = "enforcementpointId"
+	pathParams["failure_domain_id"] = "failureDomainId"
 	pathParams["site_id"] = "siteId"
-	pathParams["failure_domain_node_id"] = "failureDomainNodeId"
 	resultHeaders := map[string]string{}
 	errorHeaders := map[string]map[string]string{}
 	return vapiProtocol_.NewOperationRestMetadata(
@@ -73,7 +73,7 @@ func failureDomainsDeleteRestMetadata() vapiProtocol_.OperationRestMetadata {
 		"",
 		"",
 		"DELETE",
-		"/policy/api/v1/infra/sites/{siteId}/enforcement-points/{enforcementpointId}/failure-domains/{failureDomainNodeId}",
+		"/policy/api/v1/infra/sites/{siteId}/enforcement-points/{enforcementpointId}/failure-domains/{failureDomainId}",
 		"",
 		resultHeaders,
 		204,
@@ -87,10 +87,10 @@ func failureDomainsGetInputType() vapiBindings_.StructType {
 	fieldNameMap := make(map[string]string)
 	fields["site_id"] = vapiBindings_.NewStringType()
 	fields["enforcementpoint_id"] = vapiBindings_.NewStringType()
-	fields["failure_domain_node_id"] = vapiBindings_.NewStringType()
+	fields["failure_domain_id"] = vapiBindings_.NewStringType()
 	fieldNameMap["site_id"] = "SiteId"
 	fieldNameMap["enforcementpoint_id"] = "EnforcementpointId"
-	fieldNameMap["failure_domain_node_id"] = "FailureDomainNodeId"
+	fieldNameMap["failure_domain_id"] = "FailureDomainId"
 	var validators = []vapiBindings_.Validator{}
 	return vapiBindings_.NewStructType("operation-input", fields, reflect.TypeOf(vapiData_.StructValue{}), fieldNameMap, validators)
 }
@@ -110,19 +110,19 @@ func failureDomainsGetRestMetadata() vapiProtocol_.OperationRestMetadata {
 	bodyFieldsMap := map[string]string{}
 	fields["site_id"] = vapiBindings_.NewStringType()
 	fields["enforcementpoint_id"] = vapiBindings_.NewStringType()
-	fields["failure_domain_node_id"] = vapiBindings_.NewStringType()
+	fields["failure_domain_id"] = vapiBindings_.NewStringType()
 	fieldNameMap["site_id"] = "SiteId"
 	fieldNameMap["enforcementpoint_id"] = "EnforcementpointId"
-	fieldNameMap["failure_domain_node_id"] = "FailureDomainNodeId"
+	fieldNameMap["failure_domain_id"] = "FailureDomainId"
 	paramsTypeMap["enforcementpoint_id"] = vapiBindings_.NewStringType()
-	paramsTypeMap["failure_domain_node_id"] = vapiBindings_.NewStringType()
+	paramsTypeMap["failure_domain_id"] = vapiBindings_.NewStringType()
 	paramsTypeMap["site_id"] = vapiBindings_.NewStringType()
 	paramsTypeMap["siteId"] = vapiBindings_.NewStringType()
 	paramsTypeMap["enforcementpointId"] = vapiBindings_.NewStringType()
-	paramsTypeMap["failureDomainNodeId"] = vapiBindings_.NewStringType()
+	paramsTypeMap["failureDomainId"] = vapiBindings_.NewStringType()
 	pathParams["enforcementpoint_id"] = "enforcementpointId"
+	pathParams["failure_domain_id"] = "failureDomainId"
 	pathParams["site_id"] = "siteId"
-	pathParams["failure_domain_node_id"] = "failureDomainNodeId"
 	resultHeaders := map[string]string{}
 	errorHeaders := map[string]map[string]string{}
 	return vapiProtocol_.NewOperationRestMetadata(
@@ -137,7 +137,7 @@ func failureDomainsGetRestMetadata() vapiProtocol_.OperationRestMetadata {
 		"",
 		"",
 		"GET",
-		"/policy/api/v1/infra/sites/{siteId}/enforcement-points/{enforcementpointId}/failure-domains/{failureDomainNodeId}",
+		"/policy/api/v1/infra/sites/{siteId}/enforcement-points/{enforcementpointId}/failure-domains/{failureDomainId}",
 		"",
 		resultHeaders,
 		200,
